@@ -1,0 +1,127 @@
+
+construct query 1
+-----------------
+##Assign hasTotalDeliveryPrice property for each menu (sum of menu price and delivery charge)
+
+PREFIX food: <http://metafood.org#>
+PREFIX fo: <http://purl.org/ontology/fo/>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+
+construct {?menu food:hasTotalDeliveryPrice ?totalDeliveryPrice .} where { 
+select distinct ?menu ((?deliveryCharge +?price) AS ?totalDeliveryPrice)  where { 
+    ?restaurant food:hasDeliverySpecification ?ds .
+	?ds food:deliveryCharge ?deliveryCharge .
+    
+    ?restaurant gr:offers ?menu.
+    ?menu a fo:Menu ;
+          food:hasPrice ?price .
+
+} 
+
+}
+
+construct query 2
+-----------------
+##Assign hasTotalDeliveryTime property for each restaurant (sum of waiting time and delivery time)
+
+PREFIX food: <http://metafood.org#>
+
+construct {?restaurant food:hasTotalDeliveryTime ?totalDeliveryTime .} where { 
+    select ?restaurant  ((?deliveryTime + ?waitingTime) AS ?totalDeliveryTime )  where { 
+    ?restaurant a food:Restaurant .
+    ?restaurant food:hasDeliverySpecification ?delivery .
+    ?delivery food:deliveryTime ?deliveryTime .
+    
+    ?restaurant food:hasOrderSpecification ?order .
+    ?order food:waitingTime ?waitingTime .
+    }   
+}
+
+
+construct query 3
+-----------------
+##Assign hasAreaCode property for each restaurant. Its value extracted from its phone number.
+
+PREFIX food: <http://metafood.org#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+CONSTRUCT {?restaurant food:hasAreaCode ?areaCode.}{ 
+    ?restaurant food:hasPhone ?phone
+	BIND(CONCAT ("0" , xsd:string(?phone) ) as ?strPhone) 
+    BIND (SUBSTR(?strPhone,0,4) as ?areaCode)
+}
+
+
+construct query 4
+------------------
+##Assign hasStars property with value "***" for restaurants with rating value more than 4.5 and has rating count more than 2.
+
+PREFIX food: <http://metafood.org#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+CONSTRUCT  {?rating food:hasStars ?stars .} where { 
+	?restaurant food:hasRating ?rating .
+    ?rating food:hasRatingCount ?RatingCount .
+    ?rating food:hasRatingValue ?value ;
+       FILTER (?value >=4.5 && ?RatingCount >= 2)
+    	BIND (xsd:string("***") as ?stars)
+}
+
+construct query 5:
+------------------
+##Assign hasStars property with value "**" for restaurants with rating value between 4.5-3 and has rating count more than 2.
+
+PREFIX food: <http://metafood.org#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+CONSTRUCT {?rating food:hasStars ?stars.}  where { 
+	?restaurant food:hasRating ?rating .
+    ?rating food:hasRatingCount ?RatingCount .
+    ?rating food:hasRatingValue ?value ;
+       FILTER (?value < 4.5 && ?value >=3 && ?RatingCount >= 2)
+    	BIND (xsd:string("**") as ?stars)
+}
+
+
+construct query 6:
+------------------
+##Assign hasStars property with value "*" for restaurants with rating value less than 3 and has rating count more than 2.
+
+PREFIX food: <http://metafood.org#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+CONSTRUCT {?rating food:hasStars ?stars.}{ 
+	?restaurant food:hasRating ?rating .
+    ?rating food:hasRatingCount ?RatingCount .
+    ?rating food:hasRatingValue ?value ;
+       FILTER (?value < 3 && ?RatingCount >= 2)
+    	BIND (xsd:string("*") as ?stars)
+}   
+
+
+
+construct query 7:
+------------------
+##Assign acceptedPaymentCashCreditMethod property for each restaurant accepts both cash and credit payment methods.
+
+PREFIX food: <http://metafood.org#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+Construct {?restaurant food:acceptedPaymentCashCreditMethod ?cashCredit .} where { 
+    
+    ?restaurant food:acceptedPaymentCashMethod ?cashMethod .
+    ?cashMethod food:cashIsEnabled ?cashIsEnabled;
+        FILTER (REGEX(?cashIsEnabled, ".*En*."))
+    
+    ?restaurant food:acceptedPaymentCreditMethod ?creditMethod .
+    ?creditMethod food:creditIsEnabled ?creditIsEnabled;
+        FILTER (REGEX(?creditIsEnabled, ".*Y*."))
+    	
+    BIND (TRUE as ?cashCredit)
+    
+    
+}
+

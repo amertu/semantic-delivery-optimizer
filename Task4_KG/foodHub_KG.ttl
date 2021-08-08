@@ -1,0 +1,4060 @@
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix fo: <http://purl.org/ontology/fo/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ic: <http://ontology.eil.utoronto.ca/icontact.owl#> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix food: <http://metafood.org#> .
+
+
+<http://metafood.org/restaurant/0> a food:Restaurant;
+  food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/0>;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/0>;
+  food:hasCuisine "['Burgers', 'Kebab']";
+  food:hasDataSource "foodhub";
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/0>;
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/0>;
+  food:hasPhone "02077377577"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRating <http://metafood.org/rating/0>;
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/0>;
+  ic:hasAddress <http://metafood.org/address/0>;
+  a food:Restaurant;
+  ic:hasWebSite "afandinalebanesecusine.co.uk";
+  gr:description "Afandina Lebanese Cusine in London offers a variety of Great Tasting Grilled Chicken,Kebabs,Rice Dishes,Seafood Dishes & Many More Delights",
+    "Afandina Lebanese Cusine in London offers a variety of Great Tasting Grilled Chicken,Kebabs,Rice Dishes,Seafood Dishes & Many More Delights";
+  food:hasCuisine "['Burgers', 'Kebab']";
+  gr:legalName "Afandina Lebanese Cusine";
+  gr:offers <http://metafood.org/breakfast/0>, <http://metafood.org/mainDish/0>, <http://metafood.org/menu/0>,
+    <http://metafood.org/menu/1>, <http://metafood.org/menu/2>, <http://metafood.org/snack/0> .
+
+<http://metafood.org/address/0> a ic:Address;
+  ic:hasCity "London";
+  ic:hasPostalCode "SW9 9TN";
+  ic:hasStreet "Stockwell Rd";
+  ic:hasStreetNumber "133"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.1467297E1;
+  geo:long -1.17402E-1 .
+
+<http://metafood.org/DeliverySpecification/0> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 3.0E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/rating/0> a food:Rating;
+  food:hasRatingCount "3"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 0.0E0 .
+
+<http://metafood.org/OrderSpecification/0> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 1.0E1 .
+
+<http://metafood.org/menu/0> a fo:Menu;
+  food:hasPrice 1.05E1;
+  gr:description "Deep fried mixture of ground chickpeas and broad beans with spices served with hummus, salad, lebanese bread and tahina sauce.";
+  gr:legalName "Falafel Special" .
+
+<http://metafood.org/PaymentMethodCash/0> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/0> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/0> a food:Breakfast .
+
+<http://metafood.org/mainDish/0> a food:MainDish .
+
+<http://metafood.org/snack/0> a food:Snack .
+
+<http://metafood.org/menu/1> a fo:Menu;
+  food:hasPrice 5.95E0;
+  gr:description "Lettuce, tomato, cucumber, mint, onion, radish, summac, toasted lebanese bread with lemon juice and olive oil dressing.";
+  gr:legalName "Fattoush" .
+
+<http://metafood.org/menu/2> a fo:Menu;
+  food:hasPrice 7.95E0;
+  gr:description "Served with Chips";
+  gr:legalName "Chicken Fillet Burger" .
+
+<http://metafood.org/restaurant/0> a food:Restaurant;
+  food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/0>;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/0>;
+  food:hasCuisine "['Burgers', 'Kebab']";
+  food:hasDataSource "foodhub";
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/0>;
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/0>;
+  food:hasPhone "02077377577"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRating <http://metafood.org/rating/0>;
+  ic:hasAddress <http://metafood.org/address/0>;
+  food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/0>;
+  ic:hasWebSite "afandinalebanesecusine.co.uk";
+  gr:description "Afandina Lebanese Cusine in London offers a variety of Great Tasting Grilled Chicken,Kebabs,Rice Dishes,Seafood Dishes & Many More Delights";
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/0>;
+  gr:legalName "Afandina Lebanese Cusine";
+  gr:offers <http://metafood.org/breakfast/0>, <http://metafood.org/mainDish/0>, <http://metafood.org/mainDish/0>,
+    <http://metafood.org/menu/3>, <http://metafood.org/snack/0>;
+  food:hasDataSource "foodhub";
+  ic:hasWebSite "afandinalebanesecusine.co.uk" .
+
+<http://metafood.org/DeliverySpecification/0> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0, 2.0E0;
+  food:deliveryTime 3.0E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/address/0> a ic:Address;
+  ic:hasCity "London";
+  ic:hasPostalCode "SW9 9TN";
+  ic:hasStreet "Stockwell Rd";
+  ic:hasStreetNumber "133"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.1467297E1;
+  geo:long -1.17402E-1 .
+
+<http://metafood.org/rating/0> a food:Rating;
+  food:hasRatingCount "3"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 0.0E0 .
+
+<http://metafood.org/OrderSpecification/0> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 1.0E1 .
+
+<http://metafood.org/menu/3> a fo:Menu;
+  food:hasPrice 5.95E0;
+  gr:description "Served with Chips";
+  gr:legalName "Quarter Pounder Beef Burger with Cheese" .
+
+<http://metafood.org/PaymentMethodCash/0> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/0> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/0> a food:Breakfast .
+
+<http://metafood.org/mainDish/0> a food:MainDish .
+
+<http://metafood.org/snack/0> a food:Snack .
+
+<http://metafood.org/restaurant/0> a food:Restaurant;
+  food:hasCuisine "['Burgers', 'Kebab']";
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/0>;
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/0>;
+  food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/0>;
+  food:hasPhone "02077377577"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRating <http://metafood.org/rating/0>;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/0>;
+  ic:hasAddress <http://metafood.org/address/0>;
+  gr:description "Afandina Lebanese Cusine in London offers a variety of Great Tasting Grilled Chicken,Kebabs,Rice Dishes,Seafood Dishes & Many More Delights";
+  gr:legalName "Afandina Lebanese Cusine";
+  gr:offers <http://metafood.org/breakfast/0>, <http://metafood.org/mainDish/0>, <http://metafood.org/menu/4>;
+  food:hasDataSource "foodhub";
+  gr:offers <http://metafood.org/snack/0> .
+
+<http://metafood.org/menu/4> a fo:Menu;
+  food:hasPrice 1.295E1;
+  gr:description "Charcoal grilled baby chicken served with garlic or chilli sauce.";
+  gr:legalName "Whole Chicken" .
+
+<http://metafood.org/address/0> a ic:Address;
+  ic:hasCity "London";
+  ic:hasPostalCode "SW9 9TN";
+  ic:hasStreet "Stockwell Rd";
+  ic:hasStreetNumber "133"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.1467297E1;
+  geo:long -1.17402E-1 .
+
+<http://metafood.org/PaymentMethodCash/0> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/0> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/0> a food:Breakfast .
+
+<http://metafood.org/mainDish/0> a food:MainDish .
+
+<http://metafood.org/snack/0> a food:Snack .
+
+<http://metafood.org/rating/1> a food:Rating;
+  food:hasRatingCount "4"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 0.0E0 .
+
+<http://metafood.org/restaurant/1> a food:Restaurant;
+  food:hasCuisine "['Desserts', 'Pasta', 'Pizza']";
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/1>;
+  food:hasPhone "02036014454"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/1>;
+  food:hasRating <http://metafood.org/rating/1>;
+  ic:hasAddress <http://metafood.org/address/1>;
+  ic:hasWebSite "bari-pizzeria.com";
+  gr:description "Order the Tastiest Pizzas at amazing prices in Battersea Park. Order online or take it away, amazing food served fresh and hot. Get sides, dips, drinks and desserts.";
+  gr:legalName "Bari Pizzeria";
+  gr:offers <http://metafood.org/menu/5> .
+
+<http://metafood.org/DeliverySpecification/1> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 3.0E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/address/1> a ic:Address;
+  ic:hasCity "Battersea Park";
+  ic:hasPostalCode "SW11 3JS";
+  ic:hasStreet "Battersea High Street";
+  ic:hasStreetNumber "173"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.147048650312532E1;
+  geo:long -1.71910711962604E-1 .
+
+<http://metafood.org/OrderSpecification/1> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 5.0E0 .
+
+<http://metafood.org/menu/5> a fo:Menu;
+  food:hasPrice 4.99E0;
+  gr:description "Strips of breaded Chicken Breast served with a choice of Dip";
+  gr:legalName "8pcs Chicken Strips" .
+
+<http://metafood.org/PaymentMethodCash/1> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/restaurant/1> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/1>;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/1>;
+  food:hasDataSource "foodhub";
+  food:hasPhone "02036014454"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRating <http://metafood.org/rating/1>;
+  ic:hasAddress <http://metafood.org/address/1>;
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/1>;
+  ic:hasWebSite "bari-pizzeria.com";
+  a food:Restaurant;
+  gr:legalName "Bari Pizzeria";
+  gr:offers <http://metafood.org/breakfast/1>;
+  gr:description "Order the Tastiest Pizzas at amazing prices in Battersea Park. Order online or take it away, amazing food served fresh and hot. Get sides, dips, drinks and desserts.";
+  food:hasCuisine "['Desserts', 'Pasta', 'Pizza']";
+  gr:offers <http://metafood.org/mainDish/1>, <http://metafood.org/menu/6>, <http://metafood.org/snack/1> .
+
+<http://metafood.org/PaymentMethodCreditCard/1> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/1> a food:Breakfast .
+
+<http://metafood.org/mainDish/1> a food:MainDish .
+
+<http://metafood.org/snack/1> a food:Snack .
+
+<http://metafood.org/address/1> a ic:Address;
+  ic:hasCity "Battersea Park";
+  ic:hasPostalCode "SW11 3JS";
+  ic:hasStreet "Battersea High Street";
+  ic:hasStreetNumber "173"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.147048650312532E1;
+  geo:long -1.71910711962604E-1 .
+
+<http://metafood.org/DeliverySpecification/1> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 3.0E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/rating/1> a food:Rating;
+  food:hasRatingCount "4"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 0.0E0 .
+
+<http://metafood.org/menu/6> a fo:Menu;
+  food:hasPrice 1.195E1;
+  gr:legalName "13\" Quattro Formaggi" .
+
+<http://metafood.org/OrderSpecification/1> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 5.0E0, 5.0E0 .
+
+<http://metafood.org/restaurant/1> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/1>;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/1>;
+  food:hasDataSource "foodhub";
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/1>;
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/1>;
+  ic:hasWebSite "bari-pizzeria.com";
+  gr:offers <http://metafood.org/breakfast/1>, <http://metafood.org/mainDish/1>, <http://metafood.org/snack/1>;
+  food:hasRating <http://metafood.org/rating/1>;
+  a food:Restaurant;
+  gr:legalName "Bari Pizzeria";
+  gr:description "Order the Tastiest Pizzas at amazing prices in Battersea Park. Order online or take it away, amazing food served fresh and hot. Get sides, dips, drinks and desserts.";
+  food:hasCuisine "['Desserts', 'Pasta', 'Pizza']" .
+
+<http://metafood.org/PaymentMethodCash/1> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/1> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/1> a food:Breakfast .
+
+<http://metafood.org/mainDish/1> a food:MainDish .
+
+<http://metafood.org/snack/1> a food:Snack .
+
+<http://metafood.org/menu/7> a fo:Menu;
+  gr:description "13\" Pizza, 6pcs Chicken Wings, Garlic Bread and Can of Soft Drink";
+  gr:legalName "All For One";
+  food:hasPrice 1.499E1 .
+
+<http://metafood.org/DeliverySpecification/1> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 3.0E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/rating/1> a food:Rating;
+  food:hasRatingCount "4"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 0.0E0 .
+
+<http://metafood.org/OrderSpecification/1> a food:OrderSpecification;
+  food:minOrder 5.0E0 .
+
+<http://metafood.org/address/1> a ic:Address;
+  ic:hasCity "Battersea Park";
+  ic:hasPostalCode "SW11 3JS";
+  ic:hasStreet "Battersea High Street";
+  ic:hasStreetNumber "173"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.147048650312532E1;
+  geo:long -1.71910711962604E-1 .
+
+<http://metafood.org/restaurant/1> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/1>;
+  a food:Restaurant;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/1>;
+  food:hasDataSource "foodhub";
+  food:hasCuisine "['Desserts', 'Pasta', 'Pizza']";
+  food:hasPhone "02036014454"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasAddress <http://metafood.org/address/1>;
+  gr:description "Order the Tastiest Pizzas at amazing prices in Battersea Park. Order online or take it away, amazing food served fresh and hot. Get sides, dips, drinks and desserts.";
+  gr:legalName "Bari Pizzeria";
+  food:hasRating <http://metafood.org/rating/1>;
+  gr:offers <http://metafood.org/breakfast/1>, <http://metafood.org/mainDish/1>, <http://metafood.org/menu/7>,
+    <http://metafood.org/snack/1> .
+
+<http://metafood.org/PaymentMethodCash/1> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/1> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/1> a food:Breakfast .
+
+<http://metafood.org/mainDish/1> a food:MainDish .
+
+<http://metafood.org/snack/1> a food:Snack .
+
+<http://metafood.org/DeliverySpecification/1> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 3.0E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/rating/1> a food:Rating;
+  food:hasRatingCount "4"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 0.0E0 .
+
+<http://metafood.org/address/1> a ic:Address;
+  ic:hasCity "Battersea Park";
+  ic:hasPostalCode "SW11 3JS";
+  ic:hasStreet "Battersea High Street";
+  ic:hasStreetNumber "173"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.147048650312532E1;
+  geo:long -1.71910711962604E-1 .
+
+<http://metafood.org/restaurant/1> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/1>;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/1>;
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/1>;
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/1>;
+  food:hasPhone "02036014454"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasAddress <http://metafood.org/address/1>;
+  food:hasDataSource "foodhub";
+  ic:hasWebSite "bari-pizzeria.com";
+  gr:offers <http://metafood.org/breakfast/1>, <http://metafood.org/mainDish/1>;
+  ic:hasAddress <http://metafood.org/address/1>;
+  gr:offers <http://metafood.org/menu/8>;
+  food:hasPhone "02036014454"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasWebSite "bari-pizzeria.com";
+  gr:offers <http://metafood.org/snack/1>;
+  a food:Restaurant .
+
+<http://metafood.org/OrderSpecification/1> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 5.0E0 .
+
+<http://metafood.org/menu/8> a fo:Menu;
+  food:hasPrice 3.99E0;
+  gr:legalName "Chocolate Fudge Cake" .
+
+<http://metafood.org/PaymentMethodCash/1> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/1> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/1> a food:Breakfast .
+
+<http://metafood.org/mainDish/1> a food:MainDish .
+
+<http://metafood.org/snack/1> a food:Snack .
+
+<http://metafood.org/address/1> a ic:Address;
+  ic:hasCity "Battersea Park";
+  ic:hasPostalCode "SW11 3JS";
+  ic:hasStreet "Battersea High Street";
+  ic:hasStreetNumber "173"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.147048650312532E1;
+  geo:long -1.71910711962604E-1 .
+
+<http://metafood.org/DeliverySpecification/1> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 3.0E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/rating/1> a food:Rating;
+  food:hasRatingCount "4"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 0.0E0 .
+
+<http://metafood.org/restaurant/1> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/1>;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/1>;
+  food:hasCuisine "['Desserts', 'Pasta', 'Pizza']";
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/1>;
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/1>;
+  food:hasRating <http://metafood.org/rating/1>;
+  gr:description "Order the Tastiest Pizzas at amazing prices in Battersea Park. Order online or take it away, amazing food served fresh and hot. Get sides, dips, drinks and desserts.";
+  gr:legalName "Bari Pizzeria";
+  food:hasDataSource "foodhub";
+  gr:offers <http://metafood.org/breakfast/1>, <http://metafood.org/mainDish/1>, <http://metafood.org/menu/9>,
+    <http://metafood.org/snack/1> .
+
+<http://metafood.org/OrderSpecification/1> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 5.0E0 .
+
+<http://metafood.org/menu/9> a fo:Menu;
+  food:hasPrice 4.99E0;
+  gr:description "Deep fried Squid served with Lemon and a choice of Dip";
+  gr:legalName "Calamari Fritti" .
+
+<http://metafood.org/PaymentMethodCash/1> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/1> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/1> a food:Breakfast .
+
+<http://metafood.org/mainDish/1> a food:MainDish .
+
+<http://metafood.org/snack/1> a food:Snack .
+
+<http://metafood.org/address/2> a ic:Address;
+  ic:hasCity "Brixton";
+  ic:hasPostalCode "SW2 5RJ";
+  ic:hasStreet "Acre Lane";
+  ic:hasStreetNumber "126"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.14597176557928E1;
+  geo:long -1.2429074378266236E-1 .
+
+<http://metafood.org/restaurant/2> a food:Restaurant;
+  food:hasCuisine "['Halal', 'Indian']";
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/2>;
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/2>;
+  food:hasPhone "02036598915"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRating <http://metafood.org/rating/2>;
+  ic:hasAddress <http://metafood.org/address/2>;
+  ic:hasWebSite "bebskitchen.co.uk";
+  gr:description "Authentic Indian food served fresh and hot in Bebs Kitchen. Try from Bebs Kitchen, feel the real taste of Indian food cooked in authentic Indian spices.";
+  food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/2>;
+  gr:legalName "Bebs Kitchen";
+  gr:offers <http://metafood.org/menu/10>;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/2> .
+
+<http://metafood.org/DeliverySpecification/2> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 4.5E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/rating/2> a food:Rating;
+  food:hasRatingCount "3"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 4.9E0;
+  food:hasRatingCount "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://metafood.org/OrderSpecification/2> a food:OrderSpecification, food:OrderSpecification;
+  food:minOrder 5.0E0, 5.0E0;
+  food:waitingTime 1.5E1 .
+
+<http://metafood.org/menu/10> a fo:Menu;
+  food:hasPrice 3.5E0;
+  gr:description "Saffron flavoured";
+  gr:legalName "Pilau Rice" .
+
+<http://metafood.org/PaymentMethodCash/2> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/2> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/2> a food:Breakfast .
+
+<http://metafood.org/restaurant/2> a food:Restaurant;
+  food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/2>;
+  food:hasCuisine "['Halal', 'Indian']";
+  food:hasDataSource "foodhub";
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/2>;
+  food:hasRating <http://metafood.org/rating/2>;
+  gr:description "Authentic Indian food served fresh and hot in Bebs Kitchen. Try from Bebs Kitchen, feel the real taste of Indian food cooked in authentic Indian spices.";
+  gr:legalName "Bebs Kitchen";
+  gr:offers <http://metafood.org/breakfast/2>;
+  ic:hasAddress <http://metafood.org/address/2>;
+  food:hasPhone "02036598915"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasWebSite "bebskitchen.co.uk";
+  gr:offers <http://metafood.org/mainDish/2>, <http://metafood.org/snack/2> .
+
+<http://metafood.org/mainDish/2> a food:MainDish .
+
+<http://metafood.org/snack/2> a food:Snack .
+
+<http://metafood.org/menu/11> a fo:Menu;
+  food:hasPrice 5.95E0;
+  gr:description "A classic blend of four lentils tempered with garlic";
+  gr:legalName "Tarka Dal" .
+
+<http://metafood.org/PaymentMethodCash/2> a food:PaymentMethodCash .
+
+<http://metafood.org/address/2> a ic:Address;
+  ic:hasCity "Brixton";
+  ic:hasPostalCode "SW2 5RJ";
+  ic:hasStreet "Acre Lane";
+  ic:hasStreetNumber "126"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.14597176557928E1;
+  geo:long -1.2429074378266236E-1 .
+
+<http://metafood.org/DeliverySpecification/2> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 4.5E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/restaurant/2> food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/2>;
+  food:hasDataSource "foodhub";
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/2>;
+  gr:offers <http://metafood.org/breakfast/2>;
+  ic:hasAddress <http://metafood.org/address/2>;
+  food:hasPhone "02036598915"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasWebSite "bebskitchen.co.uk";
+  gr:offers <http://metafood.org/mainDish/2>, <http://metafood.org/menu/11>, <http://metafood.org/snack/2> .
+
+<http://metafood.org/rating/2> a food:Rating;
+  food:hasRatingValue 4.9E0;
+  food:hasRatingCount "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://metafood.org/PaymentMethodCreditCard/2> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/2> a food:Breakfast .
+
+<http://metafood.org/mainDish/2> a food:MainDish .
+
+<http://metafood.org/snack/2> a food:Snack .
+
+<http://metafood.org/address/2> ic:hasStreetNumber "126"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.14597176557928E1;
+  a ic:Address;
+  ic:hasCity "Brixton";
+  geo:long -1.2429074378266236E-1 .
+
+<http://metafood.org/OrderSpecification/2> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 1.5E1 .
+
+<http://metafood.org/menu/12> a fo:Menu;
+  gr:description "Chicken cooked with ground almonds, herbs, cream, and special Masala sauce";
+  food:hasPrice 8.95E0;
+  gr:legalName "Chicken Tikka Masala" .
+
+<http://metafood.org/DeliverySpecification/2> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 4.5E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/restaurant/2> a food:Restaurant;
+  food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/2>;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/2>;
+  food:hasCuisine "['Halal', 'Indian']";
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/2>;
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/2>;
+  food:hasRating <http://metafood.org/rating/2>;
+  gr:description "Authentic Indian food served fresh and hot in Bebs Kitchen. Try from Bebs Kitchen, feel the real taste of Indian food cooked in authentic Indian spices.";
+  food:hasDataSource "foodhub";
+  gr:legalName "Bebs Kitchen";
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/2>;
+  ic:hasAddress <http://metafood.org/address/2>;
+  food:hasPhone "02036598915"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasWebSite "bebskitchen.co.uk";
+  gr:offers <http://metafood.org/breakfast/2>, <http://metafood.org/mainDish/2>, <http://metafood.org/menu/12>;
+  a food:Restaurant;
+  gr:legalName "Bebs Kitchen";
+  gr:offers <http://metafood.org/snack/2>;
+  gr:description "Authentic Indian food served fresh and hot in Bebs Kitchen. Try from Bebs Kitchen, feel the real taste of Indian food cooked in authentic Indian spices.";
+  food:hasCuisine "['Halal', 'Indian']" .
+
+<http://metafood.org/rating/2> a food:Rating;
+  food:hasRatingValue 4.9E0 .
+
+<http://metafood.org/address/2> a ic:Address;
+  ic:hasCity "Brixton";
+  ic:hasPostalCode "SW2 5RJ";
+  ic:hasStreet "Acre Lane";
+  ic:hasStreetNumber "126"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.14597176557928E1;
+  geo:long -1.2429074378266236E-1 .
+
+<http://metafood.org/PaymentMethodCash/2> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/2> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/2> a food:Breakfast .
+
+<http://metafood.org/mainDish/2> a food:MainDish .
+
+<http://metafood.org/snack/2> a food:Snack .
+
+<http://metafood.org/DeliverySpecification/2> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 4.5E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/rating/2> food:hasRatingCount "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://metafood.org/restaurant/2> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/2>;
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/2>;
+  food:hasRating <http://metafood.org/rating/2>;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/2>;
+  gr:offers <http://metafood.org/menu/13>, <http://metafood.org/breakfast/2> .
+
+<http://metafood.org/OrderSpecification/2> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 1.5E1 .
+
+<http://metafood.org/menu/13> a fo:Menu;
+  food:hasPrice 5.95E0;
+  gr:description "A delightful combination of fresh spinach and potatoes with green herbs";
+  gr:legalName "Saag Aloo" .
+
+<http://metafood.org/PaymentMethodCash/2> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/2> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/2> a food:Breakfast .
+
+<http://metafood.org/mainDish/2> a food:MainDish .
+
+<http://metafood.org/restaurant/2> food:hasDataSource "foodhub";
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/2>;
+  food:hasPhone "02036598915"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasAddress <http://metafood.org/address/2>;
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/2>;
+  ic:hasWebSite "bebskitchen.co.uk";
+  gr:offers <http://metafood.org/mainDish/2>, <http://metafood.org/snack/2>;
+  food:hasRating <http://metafood.org/rating/2>;
+  a food:Restaurant .
+
+<http://metafood.org/snack/2> a food:Snack .
+
+<http://metafood.org/menu/14> a fo:Menu;
+  gr:legalName "Chicken Korma" .
+
+<http://metafood.org/address/2> geo:long -1.2429074378266236E-1;
+  a ic:Address;
+  ic:hasCity "Brixton";
+  ic:hasPostalCode "SW2 5RJ";
+  ic:hasStreet "Acre Lane";
+  ic:hasStreetNumber "126"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.14597176557928E1 .
+
+<http://metafood.org/OrderSpecification/2> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 1.5E1 .
+
+<http://metafood.org/DeliverySpecification/2> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 4.5E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/rating/2> a food:Rating;
+  food:hasRatingCount "3"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 4.9E0 .
+
+<http://metafood.org/restaurant/2> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/2>;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/2>;
+  food:hasCuisine "['Halal', 'Indian']";
+  gr:description "Authentic Indian food served fresh and hot in Bebs Kitchen. Try from Bebs Kitchen, feel the real taste of Indian food cooked in authentic Indian spices.";
+  gr:legalName "Bebs Kitchen";
+  food:hasDataSource "foodhub";
+  gr:offers <http://metafood.org/breakfast/2>, <http://metafood.org/mainDish/2>, <http://metafood.org/menu/14>,
+    <http://metafood.org/snack/2> .
+
+<http://metafood.org/menu/14> food:hasPrice 7.95E0 .
+
+<http://metafood.org/PaymentMethodCash/2> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/2> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/2> a food:Breakfast .
+
+<http://metafood.org/mainDish/2> a food:MainDish .
+
+<http://metafood.org/snack/2> a food:Snack .
+
+<http://metafood.org/restaurant/3> food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/3>;
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/3>;
+  ic:hasWebSite "bigbenpizza.co.uk";
+  food:hasRating <http://metafood.org/rating/3>;
+  a food:Restaurant;
+  gr:legalName "Big Ben Pizza";
+  gr:description "Order the Tastiest Pizzas at amazing prices in a. Order online or take it away, amazing food served fresh and hot. Get sides, dips, drinks and desserts.";
+  food:hasCuisine "['Burgers', 'Desserts', 'Pizza']" .
+
+<http://metafood.org/DeliverySpecification/3> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 3.0E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/menu/15> a fo:Menu;
+  gr:legalName "8pcs Hot Chicken Wings" .
+
+<http://metafood.org/rating/3> a food:Rating;
+  food:hasRatingCount "3"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 4.4E0 .
+
+<http://metafood.org/OrderSpecification/3> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 1.0E1 .
+
+<http://metafood.org/address/3> a ic:Address;
+  ic:hasCity "Lambeth";
+  ic:hasPostalCode "SE11 6EE";
+  ic:hasStreet "Lambeth Walk";
+  ic:hasStreetNumber "145"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.149259582441256E1;
+  geo:long -1.1673968590300898E-1 .
+
+<http://metafood.org/restaurant/3> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/3>;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/3>;
+  food:hasPhone "02070917288"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasAddress <http://metafood.org/address/3>;
+  food:hasDataSource "foodhub";
+  gr:offers <http://metafood.org/breakfast/3>, <http://metafood.org/mainDish/3>, <http://metafood.org/menu/15>,
+    <http://metafood.org/snack/3> .
+
+<http://metafood.org/menu/15> food:hasPrice 4.5E0 .
+
+<http://metafood.org/PaymentMethodCash/3> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/3> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/3> a food:Breakfast .
+
+<http://metafood.org/mainDish/3> a food:MainDish .
+
+<http://metafood.org/snack/3> a food:Snack .
+
+<http://metafood.org/address/3> a ic:Address;
+  ic:hasCity "Lambeth";
+  ic:hasPostalCode "SE11 6EE";
+  ic:hasStreet "Lambeth Walk";
+  ic:hasStreetNumber "145"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.149259582441256E1;
+  geo:long -1.1673968590300898E-1 .
+
+<http://metafood.org/restaurant/3> food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/3>;
+  food:hasPhone "02070917288"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRating <http://metafood.org/rating/3>;
+  ic:hasAddress <http://metafood.org/address/3>;
+  ic:hasWebSite "bigbenpizza.co.uk";
+  gr:offers <http://metafood.org/breakfast/3>;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/3>;
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/3> .
+
+<http://metafood.org/DeliverySpecification/3> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 3.0E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/breakfast/3> a food:Breakfast .
+
+<http://metafood.org/rating/3> a food:Rating;
+  food:hasRatingCount "3"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 4.4E0 .
+
+<http://metafood.org/OrderSpecification/3> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 1.0E1 .
+
+<http://metafood.org/PaymentMethodCreditCard/3> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/menu/16> a fo:Menu;
+  food:hasPrice 3.99E0;
+  gr:legalName "8pcs Chicken Wings" .
+
+<http://metafood.org/restaurant/3> a food:Restaurant, food:Restaurant;
+  food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/3>;
+  food:hasCuisine "['Burgers', 'Desserts', 'Pizza']", "['Burgers', 'Desserts', 'Pizza']";
+  food:hasDataSource "foodhub";
+  gr:description "Order the Tastiest Pizzas at amazing prices in a. Order online or take it away, amazing food served fresh and hot. Get sides, dips, drinks and desserts.";
+  gr:legalName "Big Ben Pizza";
+  gr:offers <http://metafood.org/mainDish/3>, <http://metafood.org/menu/16>, <http://metafood.org/snack/3> .
+
+<http://metafood.org/PaymentMethodCash/3> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/mainDish/3> a food:MainDish .
+
+<http://metafood.org/snack/3> a food:Snack .
+
+<http://metafood.org/address/3> a ic:Address;
+  ic:hasCity "Lambeth";
+  ic:hasPostalCode "SE11 6EE";
+  ic:hasStreet "Lambeth Walk";
+  ic:hasStreetNumber "145"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.149259582441256E1;
+  geo:long -1.1673968590300898E-1 .
+
+<http://metafood.org/restaurant/3> food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/3>;
+  food:hasPhone "02070917288"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRating <http://metafood.org/rating/3>;
+  ic:hasAddress <http://metafood.org/address/3>;
+  ic:hasWebSite "bigbenpizza.co.uk";
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/3> .
+
+<http://metafood.org/DeliverySpecification/3> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 3.0E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/rating/3> a food:Rating;
+  food:hasRatingCount "3"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 4.4E0 .
+
+<http://metafood.org/OrderSpecification/3> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 1.0E1 .
+
+<http://metafood.org/menu/17> a fo:Menu;
+  food:hasPrice 8.5E0;
+  gr:legalName "12\" Margherita" .
+
+<http://metafood.org/restaurant/3> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/3>;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/3>;
+  gr:offers <http://metafood.org/breakfast/3>;
+  food:hasDataSource "foodhub";
+  gr:offers <http://metafood.org/mainDish/3>, <http://metafood.org/menu/17>, <http://metafood.org/snack/3> .
+
+<http://metafood.org/PaymentMethodCash/3> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/3> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/3> a food:Breakfast .
+
+<http://metafood.org/mainDish/3> a food:MainDish .
+
+<http://metafood.org/snack/3> a food:Snack .
+
+<http://metafood.org/address/3> ic:hasStreet "Lambeth Walk";
+  ic:hasStreetNumber "145"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.149259582441256E1;
+  geo:long -1.1673968590300898E-1 .
+
+<http://metafood.org/restaurant/3> food:hasOrderSpecification <http://metafood.org/OrderSpecification/3>;
+  food:hasPhone "02070917288"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRating <http://metafood.org/rating/3>;
+  ic:hasAddress <http://metafood.org/address/3>;
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/3>;
+  a food:Restaurant;
+  ic:hasWebSite "bigbenpizza.co.uk";
+  gr:description "Order the Tastiest Pizzas at amazing prices in a. Order online or take it away, amazing food served fresh and hot. Get sides, dips, drinks and desserts.";
+  food:hasCuisine "['Burgers', 'Desserts', 'Pizza']";
+  gr:legalName "Big Ben Pizza" .
+
+<http://metafood.org/OrderSpecification/3> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 1.0E1 .
+
+<http://metafood.org/DeliverySpecification/3> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 3.0E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/rating/3> a food:Rating;
+  food:hasRatingCount "3"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 4.4E0 .
+
+<http://metafood.org/address/3> a ic:Address;
+  ic:hasCity "Lambeth";
+  ic:hasPostalCode "SE11 6EE" .
+
+<http://metafood.org/menu/18> a fo:Menu;
+  food:hasPrice 5.99E0;
+  gr:legalName "500ml Haagen Dazs Cookies And Cream" .
+
+<http://metafood.org/restaurant/3> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/3>;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/3>;
+  gr:offers <http://metafood.org/breakfast/3>;
+  food:hasDataSource "foodhub";
+  gr:offers <http://metafood.org/mainDish/3>, <http://metafood.org/menu/18>, <http://metafood.org/snack/3>;
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/3> .
+
+<http://metafood.org/PaymentMethodCash/3> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/3> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/3> a food:Breakfast .
+
+<http://metafood.org/mainDish/3> a food:MainDish .
+
+<http://metafood.org/snack/3> a food:Snack .
+
+<http://metafood.org/DeliverySpecification/3> food:deliveryCharge 2.0E0;
+  food:deliveryTime 3.0E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/rating/3> a food:Rating;
+  food:hasRatingCount "3"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 4.4E0 .
+
+<http://metafood.org/OrderSpecification/3> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 1.0E1 .
+
+<http://metafood.org/restaurant/3> a food:Restaurant;
+  food:hasCuisine "['Burgers', 'Desserts', 'Pizza']";
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/3>;
+  food:hasRating <http://metafood.org/rating/3>;
+  gr:description "Order the Tastiest Pizzas at amazing prices in a. Order online or take it away, amazing food served fresh and hot. Get sides, dips, drinks and desserts.";
+  gr:legalName "Big Ben Pizza";
+  gr:offers <http://metafood.org/menu/19> .
+
+<http://metafood.org/menu/19> a fo:Menu;
+  food:hasPrice 1.499E1;
+  gr:description "New. 2x chicken burgers, 2x cheese burgers, 2x large fries and bottle of soft drink.";
+  gr:legalName "Burger Offer" .
+
+<http://metafood.org/address/3> a ic:Address;
+  ic:hasCity "Lambeth";
+  ic:hasPostalCode "SE11 6EE";
+  ic:hasStreet "Lambeth Walk";
+  ic:hasStreetNumber "145"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.149259582441256E1;
+  geo:long -1.1673968590300898E-1 .
+
+<http://metafood.org/restaurant/3> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/3>;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/3>;
+  food:hasPhone "02070917288"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasAddress <http://metafood.org/address/3>;
+  ic:hasWebSite "bigbenpizza.co.uk";
+  gr:offers <http://metafood.org/breakfast/3>;
+  food:hasDataSource "foodhub";
+  gr:offers <http://metafood.org/mainDish/3>, <http://metafood.org/snack/3> .
+
+<http://metafood.org/DeliverySpecification/3> a food:DeliverySpecification .
+
+<http://metafood.org/PaymentMethodCash/3> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/3> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/3> a food:Breakfast .
+
+<http://metafood.org/mainDish/3> a food:MainDish .
+
+<http://metafood.org/snack/3> a food:Snack .
+
+<http://metafood.org/DeliverySpecification/4> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 4.0E1 .
+
+<http://metafood.org/address/4> ic:hasStreetNumber "252"^^<http://www.w3.org/2001/XMLSchema#int>;
+  a ic:Address;
+  geo:lat 5.144765821992692E1;
+  ic:hasCity "London";
+  ic:hasPostalCode "SW2 1HF";
+  geo:long -1.244054999999662E-1;
+  ic:hasStreet "BRIXTON HILL" .
+
+<http://metafood.org/rating/4> a food:Rating;
+  food:hasRatingCount "5"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 4.4E0 .
+
+<http://metafood.org/restaurant/4> a food:Restaurant;
+  food:hasCuisine "['Desserts', 'Indian', 'Indian Curries']";
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/4>;
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/4>;
+  food:hasPhone "02086717372"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRating <http://metafood.org/rating/4>;
+  ic:hasAddress <http://metafood.org/address/4>;
+  ic:hasWebSite "bombayinnonline.com";
+  gr:description "Bombay Inn in Brixton offers a variety of Great Tasting Biryani, Tandoori, Indian Curry, Balti Dishes, Madras Dishes,Vindaloo, Bhuna, Methi Dishes, Korma Dishes, Desserts & Many More Delicious Delights Online Now.";
+  gr:legalName "Bombay Inn";
+  gr:offers <http://metafood.org/menu/20>;
+  food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/4> .
+
+<http://metafood.org/DeliverySpecification/4> ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/OrderSpecification/4> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 1.0E1 .
+
+<http://metafood.org/menu/20> a fo:Menu;
+  food:hasPrice 1.595E1;
+  gr:description "Tandoori chicken, chicken tikka, lamb rogan josh, chicken korma, raita, bombay aloo, pilau rice and naan";
+  gr:legalName "Non Vegetarian Thali" .
+
+<http://metafood.org/PaymentMethodCash/4> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/4> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/restaurant/4> food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/4>;
+  food:hasDataSource "foodhub";
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/4>;
+  food:hasPhone "02086717372"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasAddress <http://metafood.org/address/4>;
+  ic:hasWebSite "bombayinnonline.com";
+  a food:Restaurant;
+  gr:legalName "Bombay Inn";
+  gr:offers <http://metafood.org/breakfast/4>;
+  gr:description "Bombay Inn in Brixton offers a variety of Great Tasting Biryani, Tandoori, Indian Curry, Balti Dishes, Madras Dishes,Vindaloo, Bhuna, Methi Dishes, Korma Dishes, Desserts & Many More Delicious Delights Online Now.";
+  gr:offers <http://metafood.org/mainDish/4>;
+  food:hasCuisine "['Desserts', 'Indian', 'Indian Curries']";
+  gr:offers <http://metafood.org/snack/4> .
+
+<http://metafood.org/breakfast/4> a food:Breakfast .
+
+<http://metafood.org/mainDish/4> a food:MainDish .
+
+<http://metafood.org/snack/4> a food:Snack .
+
+<http://metafood.org/rating/4> a food:Rating;
+  food:hasRatingValue 4.4E0 .
+
+<http://metafood.org/address/4> a ic:Address;
+  ic:hasCity "London";
+  ic:hasPostalCode "SW2 1HF";
+  ic:hasStreet "BRIXTON HILL";
+  ic:hasStreetNumber "252"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.144765821992692E1;
+  geo:long -1.244054999999662E-1 .
+
+<http://metafood.org/DeliverySpecification/4> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 4.0E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/rating/4> food:hasRatingCount "5"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://metafood.org/restaurant/4> food:hasOrderSpecification <http://metafood.org/OrderSpecification/4>;
+  food:hasRating <http://metafood.org/rating/4>;
+  food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/4>;
+  gr:offers <http://metafood.org/menu/21> .
+
+<http://metafood.org/OrderSpecification/4> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 1.0E1 .
+
+<http://metafood.org/menu/21> a fo:Menu;
+  food:hasPrice 1.495E1;
+  gr:description "Chicken tikka, chicken madras, saag aloo, pilau rice and poppadom";
+  gr:legalName "Set Meal A For One Person" .
+
+<http://metafood.org/PaymentMethodCash/4> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/4> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/restaurant/4> food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/4>;
+  food:hasDataSource "foodhub";
+  gr:offers <http://metafood.org/breakfast/4>, <http://metafood.org/mainDish/4>, <http://metafood.org/snack/4> .
+
+<http://metafood.org/breakfast/4> a food:Breakfast .
+
+<http://metafood.org/mainDish/4> a food:MainDish .
+
+<http://metafood.org/snack/4> a food:Snack .
+
+<http://metafood.org/address/5> a ic:Address;
+  ic:hasCity "London";
+  ic:hasPostalCode "SW2 4UN";
+  ic:hasStreet "New Park Road";
+  ic:hasStreetNumber " 48"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.1448432219927426E1;
+  geo:long -1.256253999999899E-1 .
+
+<http://metafood.org/restaurant/5> a food:Restaurant;
+  food:hasCuisine "['Indian', 'Indian Curries']";
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/5>;
+  food:hasPhone "02086781760"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasAddress <http://metafood.org/address/5>;
+  food:hasRating <http://metafood.org/rating/5>;
+  ic:hasWebSite "bombaykitchenonline.com";
+  gr:description "Bombay Kitchen in London offers a variety of Tandoori dishes, Curry Dishes, Biryani Dishes, Bhuna Dishes and much more delicious delights available online now.";
+  gr:legalName "Bombay Kitchen";
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/5> .
+
+<http://metafood.org/DeliverySpecification/5> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 3.5E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/rating/5> a food:Rating;
+  food:hasRatingCount "2"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 4.7E0 .
+
+<http://metafood.org/OrderSpecification/5> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 1.0E1 .
+
+<http://metafood.org/menu/22> a fo:Menu;
+  food:hasPrice 3.5E0;
+  gr:legalName "Pilau Rice" .
+
+<http://metafood.org/restaurant/5> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/5>;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/5>;
+  gr:offers <http://metafood.org/breakfast/5>;
+  food:hasDataSource "foodhub";
+  gr:offers <http://metafood.org/mainDish/5>;
+  food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/5>;
+  gr:offers <http://metafood.org/menu/22>;
+  food:hasRating <http://metafood.org/rating/5>;
+  gr:offers <http://metafood.org/snack/5> .
+
+<http://metafood.org/PaymentMethodCash/5> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/5> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/5> a food:Breakfast .
+
+<http://metafood.org/mainDish/5> a food:MainDish .
+
+<http://metafood.org/snack/5> a food:Snack .
+
+<http://metafood.org/rating/5> food:hasRatingCount "2"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://metafood.org/OrderSpecification/5> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 1.0E1 .
+
+<http://metafood.org/menu/23> a fo:Menu;
+  gr:description "Sweet,nuts";
+  gr:legalName "Peshwari Nan" .
+
+<http://metafood.org/restaurant/5> a food:Restaurant;
+  food:hasCuisine "['Indian', 'Indian Curries']";
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/5>;
+  gr:description "Bombay Kitchen in London offers a variety of Tandoori dishes, Curry Dishes, Biryani Dishes, Bhuna Dishes and much more delicious delights available online now.";
+  gr:legalName "Bombay Kitchen";
+  gr:offers <http://metafood.org/menu/23>;
+  ic:hasAddress <http://metafood.org/address/5>;
+  food:hasPhone "02086781760"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasWebSite "bombaykitchenonline.com" .
+
+<http://metafood.org/PaymentMethodCash/5> a food:PaymentMethodCash .
+
+<http://metafood.org/address/5> a ic:Address;
+  ic:hasCity "London";
+  ic:hasPostalCode "SW2 4UN";
+  ic:hasStreet "New Park Road";
+  ic:hasStreetNumber " 48"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.1448432219927426E1;
+  geo:long -1.256253999999899E-1 .
+
+<http://metafood.org/menu/23> food:hasPrice 3.5E0 .
+
+<http://metafood.org/DeliverySpecification/5> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 3.5E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/restaurant/5> food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/5>;
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/5>;
+  gr:offers <http://metafood.org/breakfast/5>;
+  food:hasDataSource "foodhub";
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/5>;
+  gr:offers <http://metafood.org/breakfast/5>, <http://metafood.org/mainDish/5>, <http://metafood.org/snack/5> .
+
+<http://metafood.org/rating/5> a food:Rating;
+  food:hasRatingValue 4.7E0 .
+
+<http://metafood.org/PaymentMethodCreditCard/5> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/5> a food:Breakfast .
+
+<http://metafood.org/mainDish/5> a food:MainDish .
+
+<http://metafood.org/snack/5> a food:Snack .
+
+<http://metafood.org/menu/24> a fo:Menu;
+  food:hasPrice 3.5E0;
+  gr:legalName "Onion Bhajee" .
+
+<http://metafood.org/PaymentMethodCash/5> a food:PaymentMethodCash .
+
+<http://metafood.org/restaurant/5> a food:Restaurant;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/5>;
+  food:hasCuisine "['Indian', 'Indian Curries']";
+  gr:description "Bombay Kitchen in London offers a variety of Tandoori dishes, Curry Dishes, Biryani Dishes, Bhuna Dishes and much more delicious delights available online now.";
+  gr:legalName "Bombay Kitchen";
+  gr:offers <http://metafood.org/menu/24>;
+  ic:hasAddress <http://metafood.org/address/5>;
+  food:hasPhone "02086781760"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://metafood.org/address/5> a ic:Address;
+  ic:hasCity "London";
+  ic:hasPostalCode "SW2 4UN";
+  ic:hasStreet "New Park Road";
+  ic:hasStreetNumber " 48"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.1448432219927426E1;
+  geo:long -1.256253999999899E-1 .
+
+<http://metafood.org/PaymentMethodCreditCard/5> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/restaurant/5> food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/5>;
+  food:hasRating <http://metafood.org/rating/5>;
+  ic:hasWebSite "bombaykitchenonline.com" .
+
+<http://metafood.org/DeliverySpecification/5> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 3.5E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/rating/5> a food:Rating;
+  food:hasRatingCount "2"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 4.7E0 .
+
+<http://metafood.org/OrderSpecification/5> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 1.0E1 .
+
+<http://metafood.org/PaymentMethodCash/5> food:cashIsEnabled "ENABLED", "ENABLED" .
+
+<http://metafood.org/restaurant/5> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/5>;
+  food:hasDataSource "foodhub";
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/5>;
+  gr:offers <http://metafood.org/mainDish/5>;
+  food:hasRating <http://metafood.org/rating/5>;
+  gr:offers <http://metafood.org/snack/5> .
+
+<http://metafood.org/mainDish/5> a food:MainDish .
+
+<http://metafood.org/snack/5> a food:Snack .
+
+<http://metafood.org/rating/5> a food:Rating;
+  food:hasRatingCount "2"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 4.7E0 .
+
+<http://metafood.org/PaymentMethodCash/5> a food:PaymentMethodCash .
+
+<http://metafood.org/OrderSpecification/5> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 1.0E1 .
+
+<http://metafood.org/menu/25> a fo:Menu;
+  food:hasPrice 3.95E0 .
+
+<http://metafood.org/restaurant/5> a food:Restaurant;
+  food:hasCuisine "['Indian', 'Indian Curries']";
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/5>;
+  gr:description "Bombay Kitchen in London offers a variety of Tandoori dishes, Curry Dishes, Biryani Dishes, Bhuna Dishes and much more delicious delights available online now.";
+  gr:legalName "Bombay Kitchen";
+  gr:offers <http://metafood.org/menu/25>;
+  ic:hasAddress <http://metafood.org/address/5>;
+  food:hasPhone "02086781760"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://metafood.org/address/5> a ic:Address;
+  ic:hasCity "London";
+  ic:hasPostalCode "SW2 4UN";
+  ic:hasStreet "New Park Road";
+  ic:hasStreetNumber " 48"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.1448432219927426E1;
+  geo:long -1.256253999999899E-1 .
+
+<http://metafood.org/menu/25> gr:legalName "Garlic Nan" .
+
+<http://metafood.org/restaurant/5> food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/5>;
+  ic:hasWebSite "bombaykitchenonline.com";
+  gr:offers <http://metafood.org/breakfast/5> .
+
+<http://metafood.org/DeliverySpecification/5> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 3.5E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/PaymentMethodCreditCard/5> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/5> a food:Breakfast, food:Breakfast .
+
+<http://metafood.org/mainDish/5> a food:MainDish .
+
+<http://metafood.org/restaurant/5> food:hasDataSource "foodhub";
+  gr:offers <http://metafood.org/breakfast/5>;
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/5>;
+  a food:Restaurant;
+  gr:legalName "Bombay Kitchen";
+  gr:description "Bombay Kitchen in London offers a variety of Tandoori dishes, Curry Dishes, Biryani Dishes, Bhuna Dishes and much more delicious delights available online now.";
+  food:hasCuisine "['Indian', 'Indian Curries']";
+  gr:offers <http://metafood.org/mainDish/5>;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/5>;
+  gr:offers <http://metafood.org/snack/5> .
+
+<http://metafood.org/snack/5> a food:Snack .
+
+<http://metafood.org/OrderSpecification/5> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 1.0E1 .
+
+<http://metafood.org/menu/26> a fo:Menu .
+
+<http://metafood.org/address/5> a ic:Address;
+  ic:hasCity "London";
+  ic:hasPostalCode "SW2 4UN";
+  ic:hasStreet "New Park Road";
+  ic:hasStreetNumber " 48"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.1448432219927426E1;
+  geo:long -1.256253999999899E-1 .
+
+<http://metafood.org/PaymentMethodCreditCard/5> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/restaurant/5> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/5>;
+  food:hasPhone "02086781760"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasAddress <http://metafood.org/address/5>;
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/5>;
+  ic:hasWebSite "bombaykitchenonline.com";
+  gr:offers <http://metafood.org/menu/26> .
+
+<http://metafood.org/PaymentMethodCash/5> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/DeliverySpecification/5> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 3.5E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/menu/26> food:hasPrice 8.95E0;
+  gr:legalName "Chicken Tikka Massala" .
+
+<http://metafood.org/rating/5> a food:Rating;
+  food:hasRatingCount "2"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 4.7E0 .
+
+<http://metafood.org/restaurant/5> food:hasDataSource "foodhub";
+  food:hasRating <http://metafood.org/rating/5>;
+  gr:offers <http://metafood.org/mainDish/5>, <http://metafood.org/snack/5> .
+
+<http://metafood.org/mainDish/5> a food:MainDish .
+
+<http://metafood.org/snack/5> a food:Snack .
+
+<http://metafood.org/restaurant/6> a food:Restaurant;
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/6>;
+  food:hasRating <http://metafood.org/rating/6>;
+  ic:hasWebSite "cardamomclubtakeaway.com";
+  food:hasCuisine "['Curry', 'Indian Curries', 'Kebab']";
+  gr:description "Authentic Indian food served fresh and hot in Cardamom Club. Try from Cardamom Club, feel the real taste of Indian food cooked in authentic Indian spices.";
+  gr:legalName "Cardamom Club" .
+
+<http://metafood.org/DeliverySpecification/6> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/rating/6> a food:Rating;
+  food:hasRatingCount "4"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 0.0E0 .
+
+<http://metafood.org/address/6> a ic:Address;
+  ic:hasCity "Trinity Road";
+  ic:hasPostalCode "SW17 7RE";
+  ic:hasStreet "Trinity Road";
+  ic:hasStreetNumber "18"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.143605937915588E1;
+  geo:long -1.6024027454556888E-1 .
+
+<http://metafood.org/restaurant/6> food:hasOrderSpecification <http://metafood.org/OrderSpecification/6>;
+  food:hasPhone "02086720088"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasAddress <http://metafood.org/address/6> .
+
+<http://metafood.org/DeliverySpecification/6> food:deliveryTime 6.0E1 .
+
+<http://metafood.org/OrderSpecification/6> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 3.0E1 .
+
+<http://metafood.org/menu/27> a fo:Menu;
+  food:hasPrice 3.1E0;
+  gr:description "Baked with fresh garlic";
+  gr:legalName "Garlic Naan" .
+
+<http://metafood.org/restaurant/6> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/6>;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/6>;
+  gr:offers <http://metafood.org/breakfast/6>, <http://metafood.org/mainDish/6>, <http://metafood.org/menu/27>,
+    <http://metafood.org/snack/6>;
+  food:hasDataSource "foodhub";
+  ic:hasAddress <http://metafood.org/address/6>;
+  food:hasPhone "02086720088"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasWebSite "cardamomclubtakeaway.com" .
+
+<http://metafood.org/PaymentMethodCash/6> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/6> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/6> a food:Breakfast .
+
+<http://metafood.org/mainDish/6> a food:MainDish .
+
+<http://metafood.org/snack/6> a food:Snack .
+
+<http://metafood.org/menu/28> food:hasPrice 4.75E0 .
+
+<http://metafood.org/restaurant/6> food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/6>;
+  gr:offers <http://metafood.org/menu/28> .
+
+<http://metafood.org/DeliverySpecification/6> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 6.0E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/OrderSpecification/6> a food:OrderSpecification;
+  food:minOrder 5.0E0 .
+
+<http://metafood.org/rating/6> a food:Rating;
+  food:hasRatingCount "4"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 0.0E0 .
+
+<http://metafood.org/restaurant/6> a food:Restaurant;
+  food:hasCuisine "['Curry', 'Indian Curries', 'Kebab']";
+  food:hasRating <http://metafood.org/rating/6>;
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/6>;
+  gr:description "Authentic Indian food served fresh and hot in Cardamom Club. Try from Cardamom Club, feel the real taste of Indian food cooked in authentic Indian spices.";
+  gr:legalName "Cardamom Club" .
+
+<http://metafood.org/menu/28> a fo:Menu;
+  gr:legalName "Pilau Rice For 2 People" .
+
+<http://metafood.org/address/6> a ic:Address;
+  ic:hasCity "Trinity Road";
+  ic:hasPostalCode "SW17 7RE";
+  ic:hasStreet "Trinity Road";
+  ic:hasStreetNumber "18"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.143605937915588E1;
+  geo:long -1.6024027454556888E-1 .
+
+<http://metafood.org/OrderSpecification/6> food:waitingTime 3.0E1 .
+
+<http://metafood.org/PaymentMethodCash/6> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/restaurant/6> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/6>;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/6>;
+  gr:offers <http://metafood.org/breakfast/6>;
+  food:hasDataSource "foodhub";
+  gr:offers <http://metafood.org/mainDish/6>, <http://metafood.org/snack/6> .
+
+<http://metafood.org/PaymentMethodCreditCard/6> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/6> a food:Breakfast .
+
+<http://metafood.org/mainDish/6> a food:MainDish .
+
+<http://metafood.org/snack/6> a food:Snack .
+
+<http://metafood.org/address/6> ic:hasPostalCode "SW17 7RE";
+  ic:hasStreet "Trinity Road";
+  ic:hasStreetNumber "18"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.143605937915588E1;
+  geo:long -1.6024027454556888E-1 .
+
+<http://metafood.org/rating/6> food:hasRatingCount "4"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 0.0E0 .
+
+<http://metafood.org/restaurant/6> food:hasOrderSpecification <http://metafood.org/OrderSpecification/6>;
+  food:hasPhone "02086720088"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRating <http://metafood.org/rating/6>;
+  ic:hasAddress <http://metafood.org/address/6>;
+  ic:hasWebSite "cardamomclubtakeaway.com";
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/6>;
+  a food:Restaurant;
+  gr:legalName "Cardamom Club" .
+
+<http://metafood.org/DeliverySpecification/6> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 6.0E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/OrderSpecification/6> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 3.0E1 .
+
+<http://metafood.org/rating/6> a food:Rating .
+
+<http://metafood.org/restaurant/6> food:hasCuisine "['Curry', 'Indian Curries', 'Kebab']";
+  gr:description "Authentic Indian food served fresh and hot in Cardamom Club. Try from Cardamom Club, feel the real taste of Indian food cooked in authentic Indian spices.";
+  gr:offers <http://metafood.org/menu/29> .
+
+<http://metafood.org/address/6> a ic:Address;
+  ic:hasCity "Trinity Road" .
+
+<http://metafood.org/menu/29> a fo:Menu;
+  food:hasPrice 8.95E0;
+  gr:description "Contains cashew nuts, Tender chicken breast cooked in the tandoor served in a rich masala sauce";
+  gr:legalName "Chicken Tikka Masala" .
+
+<http://metafood.org/PaymentMethodCash/6> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/restaurant/6> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/6>;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/6>;
+  gr:offers <http://metafood.org/breakfast/6>;
+  food:hasDataSource "foodhub";
+  gr:offers <http://metafood.org/mainDish/6>, <http://metafood.org/snack/6> .
+
+<http://metafood.org/PaymentMethodCreditCard/6> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/6> a food:Breakfast .
+
+<http://metafood.org/mainDish/6> a food:MainDish .
+
+<http://metafood.org/snack/6> a food:Snack .
+
+<http://metafood.org/OrderSpecification/6> a food:OrderSpecification;
+  food:waitingTime 3.0E1 .
+
+<http://metafood.org/address/6> ic:hasPostalCode "SW17 7RE";
+  ic:hasStreet "Trinity Road";
+  ic:hasStreetNumber "18"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.143605937915588E1;
+  geo:long -1.6024027454556888E-1 .
+
+<http://metafood.org/restaurant/6> food:hasOrderSpecification <http://metafood.org/OrderSpecification/6>;
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/6>;
+  food:hasPhone "02086720088"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasAddress <http://metafood.org/address/6>;
+  ic:hasWebSite "cardamomclubtakeaway.com" .
+
+<http://metafood.org/DeliverySpecification/6> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 6.0E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/rating/6> a food:Rating;
+  food:hasRatingCount "4"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 0.0E0 .
+
+<http://metafood.org/OrderSpecification/6> food:minOrder 5.0E0 .
+
+<http://metafood.org/restaurant/6> a food:Restaurant;
+  food:hasCuisine "['Curry', 'Indian Curries', 'Kebab']";
+  food:hasRating <http://metafood.org/rating/6>;
+  gr:description "Authentic Indian food served fresh and hot in Cardamom Club. Try from Cardamom Club, feel the real taste of Indian food cooked in authentic Indian spices.";
+  gr:legalName "Cardamom Club";
+  gr:offers <http://metafood.org/menu/30> .
+
+<http://metafood.org/address/6> a ic:Address;
+  ic:hasCity "Trinity Road" .
+
+<http://metafood.org/menu/30> a fo:Menu;
+  food:hasPrice 3.95E0;
+  gr:description "Naan bread baked with sultana, coconut and nuts, Sweet and fragrant";
+  gr:legalName "Peshwari Naan" .
+
+<http://metafood.org/PaymentMethodCash/6> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/restaurant/6> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/6>;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/6>;
+  gr:offers <http://metafood.org/breakfast/6>;
+  food:hasDataSource "foodhub";
+  gr:offers <http://metafood.org/mainDish/6>;
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/6>;
+  gr:offers <http://metafood.org/snack/6>;
+  ic:hasAddress <http://metafood.org/address/6>;
+  food:hasPhone "02086720088"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://metafood.org/PaymentMethodCreditCard/6> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/6> a food:Breakfast .
+
+<http://metafood.org/mainDish/6> a food:MainDish .
+
+<http://metafood.org/snack/6> a food:Snack .
+
+<http://metafood.org/OrderSpecification/6> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 3.0E1 .
+
+<http://metafood.org/restaurant/6> food:hasRating <http://metafood.org/rating/6>;
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/6>;
+  ic:hasWebSite "cardamomclubtakeaway.com" .
+
+<http://metafood.org/menu/31> gr:legalName "Onion Bhaji" .
+
+<http://metafood.org/DeliverySpecification/6> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 6.0E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/rating/6> a food:Rating;
+  food:hasRatingCount "4"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 0.0E0 .
+
+<http://metafood.org/restaurant/6> a food:Restaurant;
+  food:hasCuisine "['Curry', 'Indian Curries', 'Kebab']";
+  gr:description "Authentic Indian food served fresh and hot in Cardamom Club. Try from Cardamom Club, feel the real taste of Indian food cooked in authentic Indian spices.";
+  gr:legalName "Cardamom Club" .
+
+<http://metafood.org/menu/31> a fo:Menu;
+  gr:description "Chickpea flour and finely onion combined with garam masala and a modicum of chilli, <br/>Deep fried";
+  food:hasPrice 4.25E0 .
+
+<http://metafood.org/address/6> a ic:Address;
+  ic:hasCity "Trinity Road";
+  ic:hasPostalCode "SW17 7RE";
+  ic:hasStreet "Trinity Road";
+  ic:hasStreetNumber "18"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.143605937915588E1;
+  geo:long -1.6024027454556888E-1 .
+
+<http://metafood.org/restaurant/6> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/6>;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/6>;
+  gr:offers <http://metafood.org/breakfast/6>, <http://metafood.org/mainDish/6>, <http://metafood.org/menu/31>,
+    <http://metafood.org/snack/6>;
+  food:hasDataSource "foodhub" .
+
+<http://metafood.org/PaymentMethodCash/6> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/6> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/6> a food:Breakfast .
+
+<http://metafood.org/mainDish/6> a food:MainDish .
+
+<http://metafood.org/snack/6> a food:Snack .
+
+<http://metafood.org/restaurant/7> food:hasCuisine "['Alcohol', 'Burgers', 'Peri Peri']";
+  food:hasPhone "02031050222"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasAddress <http://metafood.org/address/7>;
+  ic:hasWebSite "crownpointpizzaandgrill.co.uk";
+  a food:Restaurant;
+  gr:legalName "Crown Point Pizza And Grill";
+  gr:description "Order the Tastiest Pizzas at amazing prices in West norwood. Order online or take it away, amazing food served fresh and hot. Get sides, dips, drinks and desserts." .
+
+<http://metafood.org/address/7> a ic:Address;
+  ic:hasCity "London";
+  ic:hasPostalCode "SE27 0QP";
+  ic:hasStreet "Knights Hill";
+  ic:hasStreetNumber "266"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.142307601990937E1;
+  geo:long -1.0577654999997321E-1 .
+
+<http://metafood.org/DeliverySpecification/7> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 3.0E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/restaurant/7> food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/7>;
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/7>;
+  food:hasRating <http://metafood.org/rating/7> .
+
+<http://metafood.org/rating/7> a food:Rating;
+  food:hasRatingCount "5"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 4.8E0 .
+
+<http://metafood.org/OrderSpecification/7> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 1.0E1 .
+
+<http://metafood.org/menu/32> a fo:Menu;
+  food:hasPrice 5.99E0;
+  gr:description "Served with your choice of one side and can of soft Drink";
+  gr:legalName "8pcs Chicken Wings Meal" .
+
+<http://metafood.org/restaurant/7> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/7>;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/7>;
+  gr:offers <http://metafood.org/breakfast/7>, <http://metafood.org/mainDish/7>, <http://metafood.org/menu/32>,
+    <http://metafood.org/snack/7>;
+  food:hasDataSource "foodhub" .
+
+<http://metafood.org/PaymentMethodCash/7> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/7> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/7> a food:Breakfast .
+
+<http://metafood.org/mainDish/7> a food:MainDish .
+
+<http://metafood.org/snack/7> a food:Snack .
+
+<http://metafood.org/address/7> geo:long -1.0577654999997321E-1 .
+
+<http://metafood.org/restaurant/7> a food:Restaurant;
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/7>;
+  food:hasPhone "02031050222"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasAddress <http://metafood.org/address/7>;
+  food:hasCuisine "['Alcohol', 'Burgers', 'Peri Peri']";
+  ic:hasWebSite "crownpointpizzaandgrill.co.uk";
+  gr:description "Order the Tastiest Pizzas at amazing prices in West norwood. Order online or take it away, amazing food served fresh and hot. Get sides, dips, drinks and desserts.";
+  gr:legalName "Crown Point Pizza And Grill" .
+
+<http://metafood.org/DeliverySpecification/7> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 3.0E1 .
+
+<http://metafood.org/rating/7> a food:Rating;
+  food:hasRatingValue 4.8E0;
+  food:hasRatingCount "5"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://metafood.org/address/7> a ic:Address;
+  ic:hasCity "London";
+  ic:hasPostalCode "SE27 0QP";
+  ic:hasStreet "Knights Hill";
+  ic:hasStreetNumber "266"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.142307601990937E1 .
+
+<http://metafood.org/DeliverySpecification/7> ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/restaurant/7> food:hasOrderSpecification <http://metafood.org/OrderSpecification/7>;
+  food:hasRating <http://metafood.org/rating/7>;
+  gr:offers <http://metafood.org/menu/33> .
+
+<http://metafood.org/OrderSpecification/7> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 1.0E1 .
+
+<http://metafood.org/menu/33> a fo:Menu;
+  food:hasPrice 4.99E0;
+  gr:description "Served with your choice of one side and can of soft drink";
+  gr:legalName "Quarter Chicken Meal" .
+
+<http://metafood.org/PaymentMethodCash/7> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/restaurant/7> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/7>;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/7>;
+  gr:offers <http://metafood.org/breakfast/7>;
+  food:hasDataSource "foodhub";
+  gr:offers <http://metafood.org/mainDish/7>;
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/7>;
+  gr:offers <http://metafood.org/snack/7> .
+
+<http://metafood.org/PaymentMethodCreditCard/7> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/7> a food:Breakfast .
+
+<http://metafood.org/mainDish/7> a food:MainDish .
+
+<http://metafood.org/snack/7> a food:Snack .
+
+<http://metafood.org/DeliverySpecification/7> food:deliveryTime 3.0E1 .
+
+<http://metafood.org/rating/7> a food:Rating;
+  food:hasRatingCount "5"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 4.8E0 .
+
+<http://metafood.org/restaurant/7> food:hasOrderSpecification <http://metafood.org/OrderSpecification/7>;
+  a food:Restaurant;
+  food:hasRating <http://metafood.org/rating/7>;
+  gr:description "Order the Tastiest Pizzas at amazing prices in West norwood. Order online or take it away, amazing food served fresh and hot. Get sides, dips, drinks and desserts.";
+  food:hasCuisine "['Alcohol', 'Burgers', 'Peri Peri']";
+  gr:legalName "Crown Point Pizza And Grill" .
+
+<http://metafood.org/OrderSpecification/7> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 1.0E1 .
+
+<http://metafood.org/menu/34> a fo:Menu;
+  gr:legalName "Small Pizza Meal" .
+
+<http://metafood.org/PaymentMethodCash/7> a food:PaymentMethodCash .
+
+<http://metafood.org/address/7> a ic:Address;
+  ic:hasCity "London";
+  ic:hasPostalCode "SE27 0QP";
+  ic:hasStreet "Knights Hill";
+  ic:hasStreetNumber "266"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.142307601990937E1;
+  geo:long -1.0577654999997321E-1 .
+
+<http://metafood.org/restaurant/7> food:hasPhone "02031050222"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasAddress <http://metafood.org/address/7>;
+  ic:hasWebSite "crownpointpizzaandgrill.co.uk";
+  food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/7>;
+  gr:offers <http://metafood.org/menu/34> .
+
+<http://metafood.org/menu/34> food:hasPrice 4.99E0;
+  gr:description "7inch Pizza with 2 toppings,  Chips and Can of drink" .
+
+<http://metafood.org/DeliverySpecification/7> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/PaymentMethodCash/7> food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/7> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/restaurant/7> food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/7>;
+  food:hasDataSource "foodhub";
+  gr:offers <http://metafood.org/breakfast/7>, <http://metafood.org/mainDish/7>, <http://metafood.org/snack/7> .
+
+<http://metafood.org/breakfast/7> a food:Breakfast .
+
+<http://metafood.org/mainDish/7> a food:MainDish .
+
+<http://metafood.org/snack/7> a food:Snack .
+
+<http://metafood.org/address/7> a ic:Address;
+  ic:hasCity "London";
+  ic:hasPostalCode "SE27 0QP";
+  ic:hasStreet "Knights Hill";
+  ic:hasStreetNumber "266"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.142307601990937E1;
+  geo:long -1.0577654999997321E-1 .
+
+<http://metafood.org/menu/35> a fo:Menu .
+
+<http://metafood.org/rating/7> a food:Rating;
+  food:hasRatingValue 4.8E0 .
+
+<http://metafood.org/OrderSpecification/7> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 1.0E1 .
+
+<http://metafood.org/restaurant/7> food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/7>;
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/7>;
+  a food:Restaurant;
+  food:hasPhone "02031050222"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRating <http://metafood.org/rating/7>;
+  ic:hasAddress <http://metafood.org/address/7>;
+  ic:hasWebSite "crownpointpizzaandgrill.co.uk";
+  food:hasCuisine "['Alcohol', 'Burgers', 'Peri Peri']";
+  gr:description "Order the Tastiest Pizzas at amazing prices in West norwood. Order online or take it away, amazing food served fresh and hot. Get sides, dips, drinks and desserts.";
+  gr:legalName "Crown Point Pizza And Grill" .
+
+<http://metafood.org/DeliverySpecification/7> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 3.0E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/rating/7> food:hasRatingCount "5"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://metafood.org/menu/35> food:hasPrice 5.99E0;
+  gr:description "Peri peri chicken breast fillet grilled to your favourite spiciness with mayonnaise and salad. Extra cheese and pineapple 0.50";
+  gr:legalName "Grilled Chicken Fillet Burger Meal" .
+
+<http://metafood.org/restaurant/7> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/7>;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/7>;
+  gr:offers <http://metafood.org/breakfast/7>, <http://metafood.org/mainDish/7>, <http://metafood.org/menu/35>,
+    <http://metafood.org/snack/7>;
+  food:hasDataSource "foodhub";
+  food:hasPhone "02031050222"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasWebSite "crownpointpizzaandgrill.co.uk" .
+
+<http://metafood.org/PaymentMethodCash/7> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/7> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/7> a food:Breakfast .
+
+<http://metafood.org/mainDish/7> a food:MainDish .
+
+<http://metafood.org/snack/7> a food:Snack .
+
+<http://metafood.org/DeliverySpecification/7> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 3.0E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/OrderSpecification/7> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 1.0E1 .
+
+<http://metafood.org/restaurant/7> a food:Restaurant;
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/7>;
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/7>;
+  food:hasCuisine "['Alcohol', 'Burgers', 'Peri Peri']";
+  food:hasRating <http://metafood.org/rating/7>;
+  gr:description "Order the Tastiest Pizzas at amazing prices in West norwood. Order online or take it away, amazing food served fresh and hot. Get sides, dips, drinks and desserts.";
+  gr:legalName "Crown Point Pizza And Grill" .
+
+<http://metafood.org/rating/7> a food:Rating;
+  food:hasRatingCount "5"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 4.8E0 .
+
+<http://metafood.org/menu/36> a fo:Menu;
+  gr:description "Served with your choice of one side and can of soft drink";
+  gr:legalName "Half Chicken Meal" .
+
+<http://metafood.org/address/7> a ic:Address;
+  ic:hasCity "London";
+  ic:hasPostalCode "SE27 0QP";
+  ic:hasStreet "Knights Hill";
+  ic:hasStreetNumber "266"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.142307601990937E1;
+  geo:long -1.0577654999997321E-1 .
+
+<http://metafood.org/restaurant/7> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/7>;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/7>;
+  ic:hasAddress <http://metafood.org/address/7>;
+  gr:offers <http://metafood.org/breakfast/7>, <http://metafood.org/menu/36>, <http://metafood.org/mainDish/7> .
+
+<http://metafood.org/menu/36> food:hasPrice 6.99E0 .
+
+<http://metafood.org/PaymentMethodCash/7> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/7> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/7> a food:Breakfast .
+
+<http://metafood.org/mainDish/7> a food:MainDish .
+
+<http://metafood.org/snack/7> a food:Snack .
+
+<http://metafood.org/restaurant/7> food:hasDataSource "foodhub";
+  gr:offers <http://metafood.org/snack/7> .
+
+<http://metafood.org/address/8> a ic:Address;
+  ic:hasCity "London";
+  ic:hasPostalCode "SW11 5RQ";
+  ic:hasStreet "Lavender Hill";
+  ic:hasStreetNumber "62"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.146609167414545E1;
+  geo:long -1.539384739868055E-1 .
+
+<http://metafood.org/restaurant/8> a food:Restaurant;
+  food:hasCuisine "['Indian', 'Kebab', 'Milkshakes']";
+  food:hasPhone "02072280222"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasAddress <http://metafood.org/address/8>;
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/8>;
+  ic:hasWebSite "curry-base.com";
+  gr:description "Curry Base in London offers a variety of Great Tasting Lamb Tikka, Kebab, Seafood, Biryani, Salads, Balti Dishes, Milkshakes & Many More Delicious Delights Online Now.";
+  gr:legalName "Curry Base";
+  food:hasRating <http://metafood.org/rating/8> .
+
+<http://metafood.org/DeliverySpecification/8> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 3.0E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/rating/8> a food:Rating;
+  food:hasRatingCount "-1"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 4.4E0 .
+
+<http://metafood.org/OrderSpecification/8> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 1.0E1 .
+
+<http://metafood.org/restaurant/8> food:hasOrderSpecification <http://metafood.org/OrderSpecification/8>;
+  food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/8>;
+  gr:offers <http://metafood.org/menu/37> .
+
+<http://metafood.org/menu/37> a fo:Menu;
+  food:hasPrice 6.99E0;
+  gr:description "Spinach and cheese cooked in creamy sauce";
+  gr:legalName "87. Sag Paneer Main" .
+
+<http://metafood.org/PaymentMethodCash/8> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/8> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/restaurant/8> food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/8>;
+  food:hasDataSource "foodhub";
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/8>;
+  gr:offers <http://metafood.org/breakfast/8>, <http://metafood.org/mainDish/8>, <http://metafood.org/snack/8>;
+  ic:hasAddress <http://metafood.org/address/8>;
+  food:hasPhone "02072280222"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://metafood.org/breakfast/8> a food:Breakfast .
+
+<http://metafood.org/mainDish/8> a food:MainDish .
+
+<http://metafood.org/snack/8> a food:Snack .
+
+<http://metafood.org/DeliverySpecification/8> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0 .
+
+<http://metafood.org/address/8> ic:hasStreetNumber "62"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.146609167414545E1;
+  a ic:Address;
+  ic:hasCity "London";
+  ic:hasPostalCode "SW11 5RQ";
+  geo:long -1.539384739868055E-1;
+  ic:hasStreet "Lavender Hill" .
+
+<http://metafood.org/rating/8> a food:Rating;
+  food:hasRatingValue 4.4E0;
+  food:hasRatingCount "-1"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://metafood.org/restaurant/8> a food:Restaurant;
+  food:hasCuisine "['Indian', 'Kebab', 'Milkshakes']";
+  food:hasRating <http://metafood.org/rating/8>;
+  ic:hasWebSite "curry-base.com";
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/8>;
+  gr:description "Curry Base in London offers a variety of Great Tasting Lamb Tikka, Kebab, Seafood, Biryani, Salads, Balti Dishes, Milkshakes & Many More Delicious Delights Online Now.";
+  gr:legalName "Curry Base" .
+
+<http://metafood.org/DeliverySpecification/8> food:deliveryTime 3.0E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/OrderSpecification/8> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 1.0E1 .
+
+<http://metafood.org/menu/38> a fo:Menu;
+  food:hasPrice 6.99E0;
+  gr:description "Homemade cheese with fresh green chilli";
+  gr:legalName "86. Chilli Paneer Main" .
+
+<http://metafood.org/restaurant/8> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/8>;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/8>;
+  gr:offers <http://metafood.org/breakfast/8>, <http://metafood.org/mainDish/8>, <http://metafood.org/menu/38>,
+    <http://metafood.org/snack/8>;
+  food:hasDataSource "foodhub" .
+
+<http://metafood.org/PaymentMethodCash/8> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/8> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/8> a food:Breakfast .
+
+<http://metafood.org/mainDish/8> a food:MainDish .
+
+<http://metafood.org/snack/8> a food:Snack .
+
+<http://metafood.org/OrderSpecification/8> food:minOrder 5.0E0;
+  food:waitingTime 1.0E1 .
+
+<http://metafood.org/restaurant/8> food:hasOrderSpecification <http://metafood.org/OrderSpecification/8>;
+  food:hasPhone "02072280222"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/8>;
+  ic:hasAddress <http://metafood.org/address/8>;
+  ic:hasWebSite "curry-base.com" .
+
+<http://metafood.org/menu/39> gr:legalName "85. Vegetables Dhansak Main" .
+
+<http://metafood.org/DeliverySpecification/8> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 3.0E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/OrderSpecification/8> a food:OrderSpecification .
+
+<http://metafood.org/rating/8> a food:Rating;
+  food:hasRatingCount "-1"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 4.4E0 .
+
+<http://metafood.org/restaurant/8> a food:Restaurant;
+  food:hasCuisine "['Indian', 'Kebab', 'Milkshakes']";
+  food:hasRating <http://metafood.org/rating/8>;
+  gr:description "Curry Base in London offers a variety of Great Tasting Lamb Tikka, Kebab, Seafood, Biryani, Salads, Balti Dishes, Milkshakes & Many More Delicious Delights Online Now.";
+  gr:legalName "Curry Base" .
+
+<http://metafood.org/menu/39> a fo:Menu;
+  gr:description "Sweet sour hot mixed vegetables cooked with lentils";
+  food:hasPrice 6.99E0 .
+
+<http://metafood.org/address/8> a ic:Address;
+  ic:hasCity "London";
+  ic:hasPostalCode "SW11 5RQ";
+  ic:hasStreet "Lavender Hill";
+  ic:hasStreetNumber "62"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.146609167414545E1;
+  geo:long -1.539384739868055E-1 .
+
+<http://metafood.org/restaurant/8> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/8>;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/8>;
+  gr:offers <http://metafood.org/breakfast/8>, <http://metafood.org/mainDish/8>, <http://metafood.org/menu/39>,
+    <http://metafood.org/snack/8>;
+  food:hasDataSource "foodhub" .
+
+<http://metafood.org/PaymentMethodCash/8> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/8> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/8> a food:Breakfast .
+
+<http://metafood.org/mainDish/8> a food:MainDish .
+
+<http://metafood.org/snack/8> a food:Snack .
+
+<http://metafood.org/address/9> a ic:Address;
+  ic:hasCity "Lambeth";
+  ic:hasPostalCode "SE11 6EE";
+  ic:hasStreet "Lambeth Walk";
+  ic:hasStreetNumber "145-147"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.1492603294922546E1;
+  geo:long -1.166265177910275E-1 .
+
+<http://metafood.org/restaurant/9> a food:Restaurant;
+  food:hasCuisine "['Desserts', 'Halal', 'Pasta']";
+  food:hasPhone "02070917266"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasAddress <http://metafood.org/address/9>;
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/9>;
+  ic:hasWebSite "fornopizzaonline.com";
+  gr:description "Order the Tastiest Pizzas at amazing prices in a. Order online or take it away, amazing food served fresh and hot. Get sides, dips, drinks and desserts.";
+  gr:legalName "Forno Pizza";
+  food:hasRating <http://metafood.org/rating/9> .
+
+<http://metafood.org/DeliverySpecification/9> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 3.0E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/rating/9> a food:Rating;
+  food:hasRatingCount "3"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 0.0E0 .
+
+<http://metafood.org/OrderSpecification/9> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 1.0E1 .
+
+<http://metafood.org/restaurant/9> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/9>;
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/9>;
+  gr:offers <http://metafood.org/menu/40>;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/9> .
+
+<http://metafood.org/menu/40> a fo:Menu;
+  food:hasPrice 9.99E0;
+  gr:legalName "13\" Pizza" .
+
+<http://metafood.org/PaymentMethodCash/9> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/9> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/9> a food:Breakfast .
+
+<http://metafood.org/restaurant/9> a food:Restaurant;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/9>;
+  food:hasDataSource "foodhub";
+  gr:legalName "Forno Pizza";
+  gr:description "Order the Tastiest Pizzas at amazing prices in a. Order online or take it away, amazing food served fresh and hot. Get sides, dips, drinks and desserts.";
+  food:hasCuisine "['Desserts', 'Halal', 'Pasta']";
+  gr:offers <http://metafood.org/breakfast/9>, <http://metafood.org/mainDish/9>, <http://metafood.org/snack/9> .
+
+<http://metafood.org/mainDish/9> a food:MainDish .
+
+<http://metafood.org/snack/9> a food:Snack .
+
+<http://metafood.org/address/9> a ic:Address;
+  ic:hasCity "Lambeth";
+  ic:hasPostalCode "SE11 6EE";
+  ic:hasStreet "Lambeth Walk";
+  ic:hasStreetNumber "145-147"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.1492603294922546E1;
+  geo:long -1.166265177910275E-1 .
+
+<http://metafood.org/restaurant/9> food:hasPhone "02070917266"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasAddress <http://metafood.org/address/9>;
+  ic:hasWebSite "fornopizzaonline.com";
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/9>;
+  gr:offers <http://metafood.org/mainDish/9> .
+
+<http://metafood.org/DeliverySpecification/9> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 3.0E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/rating/9> a food:Rating;
+  food:hasRatingCount "3"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 0.0E0 .
+
+<http://metafood.org/mainDish/9> a food:MainDish .
+
+<http://metafood.org/restaurant/9> food:hasOrderSpecification <http://metafood.org/OrderSpecification/9>;
+  food:hasRating <http://metafood.org/rating/9>;
+  gr:offers <http://metafood.org/breakfast/9> .
+
+<http://metafood.org/OrderSpecification/9> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 1.0E1 .
+
+<http://metafood.org/menu/41> a fo:Menu;
+  food:hasPrice 1.2E1;
+  gr:legalName "1b. 16\" Margherita" .
+
+<http://metafood.org/restaurant/9> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/9>;
+  gr:offers <http://metafood.org/menu/41>;
+  food:hasDataSource "foodhub" .
+
+<http://metafood.org/PaymentMethodCash/9> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/9> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/9> a food:Breakfast .
+
+<http://metafood.org/address/9> geo:lat 5.1492603294922546E1;
+  geo:long -1.166265177910275E-1 .
+
+<http://metafood.org/menu/42> gr:legalName "50. Cheesy Chips" .
+
+<http://metafood.org/restaurant/9> food:hasPhone "02070917266"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasAddress <http://metafood.org/address/9>;
+  ic:hasWebSite "fornopizzaonline.com";
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/9> .
+
+<http://metafood.org/OrderSpecification/9> a food:OrderSpecification .
+
+<http://metafood.org/DeliverySpecification/9> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 3.0E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/rating/9> a food:Rating;
+  food:hasRatingCount "3"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 0.0E0 .
+
+<http://metafood.org/menu/42> a fo:Menu .
+
+<http://metafood.org/restaurant/9> a food:Restaurant;
+  food:hasCuisine "['Desserts', 'Halal', 'Pasta']";
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/9>;
+  food:hasRating <http://metafood.org/rating/9>;
+  gr:description "Order the Tastiest Pizzas at amazing prices in a. Order online or take it away, amazing food served fresh and hot. Get sides, dips, drinks and desserts.";
+  gr:legalName "Forno Pizza" .
+
+<http://metafood.org/OrderSpecification/9> food:waitingTime 1.0E1;
+  food:minOrder 5.0E0 .
+
+<http://metafood.org/address/9> a ic:Address;
+  ic:hasCity "Lambeth";
+  ic:hasPostalCode "SE11 6EE";
+  ic:hasStreet "Lambeth Walk";
+  ic:hasStreetNumber "145-147"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://metafood.org/menu/42> food:hasPrice 3.99E0 .
+
+<http://metafood.org/restaurant/9> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/9>;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/9>;
+  gr:offers <http://metafood.org/menu/42>, <http://metafood.org/breakfast/9> .
+
+<http://metafood.org/PaymentMethodCash/9> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/9> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/9> a food:Breakfast .
+
+<http://metafood.org/mainDish/9> a food:MainDish .
+
+<http://metafood.org/restaurant/9> food:hasDataSource "foodhub";
+  gr:offers <http://metafood.org/mainDish/9>, <http://metafood.org/snack/9> .
+
+<http://metafood.org/snack/9> a food:Snack .
+
+<http://metafood.org/address/9> ic:hasPostalCode "SE11 6EE";
+  ic:hasStreet "Lambeth Walk";
+  ic:hasStreetNumber "145-147"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.1492603294922546E1;
+  geo:long -1.166265177910275E-1 .
+
+<http://metafood.org/restaurant/9> food:hasOrderSpecification <http://metafood.org/OrderSpecification/9>;
+  food:hasPhone "02070917266"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRating <http://metafood.org/rating/9>;
+  ic:hasAddress <http://metafood.org/address/9>;
+  ic:hasWebSite "fornopizzaonline.com" .
+
+<http://metafood.org/OrderSpecification/9> food:waitingTime 1.0E1 .
+
+<http://metafood.org/rating/9> a food:Rating;
+  food:hasRatingCount "3"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 0.0E0 .
+
+<http://metafood.org/DeliverySpecification/9> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 3.0E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/OrderSpecification/9> a food:OrderSpecification;
+  food:minOrder 5.0E0 .
+
+<http://metafood.org/restaurant/9> a food:Restaurant;
+  food:hasCuisine "['Desserts', 'Halal', 'Pasta']";
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/9>;
+  gr:description "Order the Tastiest Pizzas at amazing prices in a. Order online or take it away, amazing food served fresh and hot. Get sides, dips, drinks and desserts.";
+  gr:legalName "Forno Pizza";
+  gr:offers <http://metafood.org/menu/43> .
+
+<http://metafood.org/address/9> a ic:Address;
+  ic:hasCity "Lambeth" .
+
+<http://metafood.org/menu/43> a fo:Menu;
+  food:hasPrice 1.129E1;
+  gr:legalName "26a. 13\" BBQ Pizza" .
+
+<http://metafood.org/PaymentMethodCash/9> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/restaurant/9> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/9>;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/9>;
+  gr:offers <http://metafood.org/breakfast/9>, <http://metafood.org/mainDish/9>, <http://metafood.org/snack/9>;
+  food:hasDataSource "foodhub" .
+
+<http://metafood.org/PaymentMethodCreditCard/9> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/9> a food:Breakfast .
+
+<http://metafood.org/mainDish/9> a food:MainDish .
+
+<http://metafood.org/snack/9> a food:Snack .
+
+<http://metafood.org/DeliverySpecification/9> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 3.0E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/restaurant/9> food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/9>;
+  gr:offers <http://metafood.org/menu/44> .
+
+<http://metafood.org/menu/44> food:hasPrice 1.44E1 .
+
+<http://metafood.org/rating/9> a food:Rating;
+  food:hasRatingCount "3"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 0.0E0 .
+
+<http://metafood.org/OrderSpecification/9> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 1.0E1 .
+
+<http://metafood.org/restaurant/9> a food:Restaurant;
+  food:hasCuisine "['Desserts', 'Halal', 'Pasta']";
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/9>;
+  food:hasRating <http://metafood.org/rating/9>;
+  gr:description "Order the Tastiest Pizzas at amazing prices in a. Order online or take it away, amazing food served fresh and hot. Get sides, dips, drinks and desserts.";
+  gr:legalName "Forno Pizza" .
+
+<http://metafood.org/menu/44> a fo:Menu;
+  gr:legalName "10b. 16\" Buffalo" .
+
+<http://metafood.org/address/9> a ic:Address;
+  ic:hasCity "Lambeth";
+  ic:hasPostalCode "SE11 6EE";
+  ic:hasStreet "Lambeth Walk";
+  ic:hasStreetNumber "145-147"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.1492603294922546E1;
+  geo:long -1.166265177910275E-1 .
+
+<http://metafood.org/restaurant/9> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/9>;
+  food:hasPhone "02070917266"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasAddress <http://metafood.org/address/9>;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/9>;
+  ic:hasWebSite "fornopizzaonline.com";
+  gr:offers <http://metafood.org/breakfast/9> .
+
+<http://metafood.org/PaymentMethodCash/9> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/9> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/9> a food:Breakfast .
+
+<http://metafood.org/mainDish/9> a food:MainDish .
+
+<http://metafood.org/restaurant/9> food:hasDataSource "foodhub";
+  gr:offers <http://metafood.org/mainDish/9>, <http://metafood.org/snack/9> .
+
+<http://metafood.org/snack/9> a food:Snack .
+
+<http://metafood.org/address/10> a ic:Address;
+  ic:hasCity "Tulse Hill";
+  ic:hasPostalCode "SE27 9AZ";
+  ic:hasStreet "Norwood Road";
+  ic:hasStreetNumber "152"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.1440933582829125E1;
+  geo:long -1.0667148794594183E-1 .
+
+<http://metafood.org/restaurant/10> a food:Restaurant;
+  food:hasCuisine "['Pasta', 'Pizza']";
+  food:hasPhone "02086742000"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasAddress <http://metafood.org/address/10>;
+  ic:hasWebSite "godfatherpizzaonline.com";
+  gr:description "Order the Tastiest Pizzas at amazing prices in London. Order online or take it away, amazing food served fresh and hot. Get sides, dips, drinks and desserts.";
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/10>;
+  gr:legalName "Godfather Stone Baked Italian Pizza" .
+
+<http://metafood.org/DeliverySpecification/10> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 3.0E1;
+  ic:hasPostalCode "SW9 9TN" .
+
+<http://metafood.org/rating/10> a food:Rating;
+  food:hasRatingCount "3"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 0.0E0 .
+
+<http://metafood.org/restaurant/10> food:hasOrderSpecification <http://metafood.org/OrderSpecification/10>;
+  food:hasRating <http://metafood.org/rating/10> .
+
+<http://metafood.org/OrderSpecification/10> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 1.0E1 .
+
+<http://metafood.org/menu/45> a fo:Menu;
+  food:hasPrice 1.499E1;
+  gr:legalName "X Large Parma" .
+
+<http://metafood.org/restaurant/10> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/10>;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/10>;
+  gr:offers <http://metafood.org/menu/45>, <http://metafood.org/breakfast/10> .
+
+<http://metafood.org/PaymentMethodCash/10> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/10> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/10> a food:Breakfast .
+
+<http://metafood.org/mainDish/10> a food:MainDish .
+
+<http://metafood.org/restaurant/10> food:hasDataSource "foodhub";
+  gr:offers <http://metafood.org/mainDish/10>, <http://metafood.org/snack/10> .
+
+<http://metafood.org/snack/10> a food:Snack .
+
+<http://metafood.org/DeliverySpecification/11> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/restaurant/11> a food:Restaurant;
+  food:hasCuisine "['Chinese', 'Desserts', 'Noodles']";
+  food:hasPhone "02077380712"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasAddress <http://metafood.org/address/11>;
+  ic:hasWebSite "hottakelondon.co.uk";
+  gr:description "Try the authentic Chinese food cooked in real Chinese sauces. Order food online from HOT TAKE, #1 Chinese takeaway in a. Satisfaction guaranteed.";
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/11>;
+  gr:legalName "HOT TAKE" .
+
+<http://metafood.org/address/11> a ic:Address;
+  ic:hasCity "London";
+  ic:hasPostalCode "SW11 3BL";
+  ic:hasStreet "Battersea Park Road";
+  ic:hasStreetNumber "545"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.1471529332499706E1;
+  geo:long -1.6740797095569304E-1 .
+
+<http://metafood.org/DeliverySpecification/11> food:deliveryTime 2.0E1 .
+
+<http://metafood.org/rating/11> a food:Rating;
+  food:hasRatingCount "4"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 4.6E0 .
+
+<http://metafood.org/restaurant/11> food:hasOrderSpecification <http://metafood.org/OrderSpecification/11>;
+  food:hasRating <http://metafood.org/rating/11> .
+
+<http://metafood.org/OrderSpecification/11> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 1.0E1 .
+
+<http://metafood.org/menu/46> a fo:Menu;
+  food:hasPrice 3.99E0;
+  gr:description "Egg, Contains Soya";
+  gr:legalName "Egg Fried Rice" .
+
+<http://metafood.org/restaurant/11> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/11>;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/11>;
+  gr:offers <http://metafood.org/menu/46>, <http://metafood.org/breakfast/11> .
+
+<http://metafood.org/PaymentMethodCash/11> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/11> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/11> a food:Breakfast .
+
+<http://metafood.org/mainDish/11> a food:MainDish .
+
+<http://metafood.org/restaurant/11> food:hasDataSource "foodhub";
+  gr:offers <http://metafood.org/mainDish/11>, <http://metafood.org/snack/11> .
+
+<http://metafood.org/snack/11> a food:Snack .
+
+<http://metafood.org/address/11> ic:hasPostalCode "SW11 3BL";
+  ic:hasStreet "Battersea Park Road";
+  ic:hasStreetNumber "545"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.1471529332499706E1;
+  geo:long -1.6740797095569304E-1 .
+
+<http://metafood.org/menu/47> a fo:Menu .
+
+<http://metafood.org/restaurant/11> food:hasPhone "02077380712"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/11>;
+  food:hasRating <http://metafood.org/rating/11>;
+  ic:hasAddress <http://metafood.org/address/11>;
+  ic:hasWebSite "hottakelondon.co.uk" .
+
+<http://metafood.org/rating/11> food:hasRatingCount "4"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 4.6E0 .
+
+<http://metafood.org/OrderSpecification/11> food:waitingTime 1.0E1 .
+
+<http://metafood.org/DeliverySpecification/11> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 2.0E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/restaurant/11> a food:Restaurant;
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/11>;
+  food:hasCuisine "['Chinese', 'Desserts', 'Noodles']";
+  gr:description "Try the authentic Chinese food cooked in real Chinese sauces. Order food online from HOT TAKE, #1 Chinese takeaway in a. Satisfaction guaranteed.";
+  gr:legalName "HOT TAKE" .
+
+<http://metafood.org/rating/11> a food:Rating .
+
+<http://metafood.org/OrderSpecification/11> a food:OrderSpecification;
+  food:minOrder 5.0E0 .
+
+<http://metafood.org/address/11> a ic:Address;
+  ic:hasCity "London" .
+
+<http://metafood.org/menu/47> food:hasPrice 7.4E0;
+  gr:description "In batter, Contains soya";
+  gr:legalName "Sweet And Sour Chicken Hong Kong Style" .
+
+<http://metafood.org/restaurant/11> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/11>;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/11>;
+  gr:offers <http://metafood.org/menu/47>, <http://metafood.org/breakfast/11> .
+
+<http://metafood.org/PaymentMethodCash/11> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/11> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/11> a food:Breakfast .
+
+<http://metafood.org/mainDish/11> a food:MainDish .
+
+<http://metafood.org/restaurant/11> food:hasDataSource "foodhub";
+  food:hasPhone "02077380712"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasWebSite "hottakelondon.co.uk";
+  gr:offers <http://metafood.org/mainDish/11>, <http://metafood.org/snack/11>;
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/11> .
+
+<http://metafood.org/snack/11> a food:Snack .
+
+<http://metafood.org/menu/48> food:hasPrice 7.5E0 .
+
+<http://metafood.org/DeliverySpecification/11> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 2.0E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/OrderSpecification/11> food:minOrder 5.0E0;
+  a food:OrderSpecification;
+  food:waitingTime 1.0E1 .
+
+<http://metafood.org/restaurant/11> a food:Restaurant;
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/11>;
+  food:hasRating <http://metafood.org/rating/11>;
+  gr:description "Try the authentic Chinese food cooked in real Chinese sauces. Order food online from HOT TAKE, #1 Chinese takeaway in a. Satisfaction guaranteed.";
+  food:hasCuisine "['Chinese', 'Desserts', 'Noodles']";
+  gr:legalName "HOT TAKE" .
+
+<http://metafood.org/rating/11> a food:Rating;
+  food:hasRatingCount "4"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 4.6E0 .
+
+<http://metafood.org/menu/48> a fo:Menu;
+  gr:legalName "(A) Barbecued Pork, Chicken And Shrimps Special Fried Rice" .
+
+<http://metafood.org/address/11> a ic:Address;
+  ic:hasCity "London";
+  ic:hasPostalCode "SW11 3BL";
+  ic:hasStreet "Battersea Park Road";
+  ic:hasStreetNumber "545"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.1471529332499706E1;
+  geo:long -1.6740797095569304E-1 .
+
+<http://metafood.org/restaurant/11> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/11>;
+  ic:hasAddress <http://metafood.org/address/11>;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/11>;
+  gr:offers <http://metafood.org/menu/48>, <http://metafood.org/breakfast/11> .
+
+<http://metafood.org/PaymentMethodCash/11> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/11> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/11> a food:Breakfast .
+
+<http://metafood.org/mainDish/11> a food:MainDish .
+
+<http://metafood.org/restaurant/11> a food:Restaurant;
+  food:hasDataSource "foodhub";
+  gr:description "Try the authentic Chinese food cooked in real Chinese sauces. Order food online from HOT TAKE, #1 Chinese takeaway in a. Satisfaction guaranteed.";
+  food:hasCuisine "['Chinese', 'Desserts', 'Noodles']";
+  gr:legalName "HOT TAKE";
+  gr:offers <http://metafood.org/mainDish/11>;
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/11>;
+  gr:offers <http://metafood.org/snack/11> .
+
+<http://metafood.org/snack/11> a food:Snack .
+
+<http://metafood.org/rating/11> a food:Rating;
+  food:hasRatingCount "4"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://metafood.org/DeliverySpecification/11> food:deliveryCharge 2.0E0;
+  food:deliveryTime 2.0E1 .
+
+<http://metafood.org/OrderSpecification/11> a food:OrderSpecification .
+
+<http://metafood.org/address/11> a ic:Address;
+  ic:hasCity "London";
+  ic:hasPostalCode "SW11 3BL";
+  ic:hasStreet "Battersea Park Road";
+  ic:hasStreetNumber "545"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.1471529332499706E1;
+  geo:long -1.6740797095569304E-1 .
+
+<http://metafood.org/restaurant/11> food:hasPhone "02077380712"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRating <http://metafood.org/rating/11>;
+  ic:hasAddress <http://metafood.org/address/11>;
+  ic:hasWebSite "hottakelondon.co.uk";
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/11> .
+
+<http://metafood.org/DeliverySpecification/11> a food:DeliverySpecification;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/rating/11> food:hasRatingValue 4.6E0 .
+
+<http://metafood.org/OrderSpecification/11> food:minOrder 5.0E0;
+  food:waitingTime 1.0E1 .
+
+<http://metafood.org/menu/49> a fo:Menu;
+  food:hasPrice 7.4E0;
+  gr:description "Spicy. Contains soya";
+  gr:legalName "Crispy Shredded Beef With Chilli And Carrots" .
+
+<http://metafood.org/restaurant/11> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/11>;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/11>;
+  gr:offers <http://metafood.org/menu/49>, <http://metafood.org/breakfast/11> .
+
+<http://metafood.org/PaymentMethodCash/11> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/11> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/11> a food:Breakfast .
+
+<http://metafood.org/mainDish/11> a food:MainDish .
+
+<http://metafood.org/restaurant/11> food:hasDataSource "foodhub";
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/11>;
+  food:hasPhone "02077380712"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasAddress <http://metafood.org/address/11>;
+  ic:hasWebSite "hottakelondon.co.uk";
+  gr:offers <http://metafood.org/mainDish/11>, <http://metafood.org/snack/11> .
+
+<http://metafood.org/snack/11> a food:Snack .
+
+<http://metafood.org/OrderSpecification/11> food:minOrder 5.0E0;
+  food:waitingTime 1.0E1 .
+
+<http://metafood.org/DeliverySpecification/11> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 2.0E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/menu/50> gr:legalName "(B) Chicken Chow Mein" .
+
+<http://metafood.org/restaurant/11> food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/11>;
+  a food:Restaurant;
+  food:hasRating <http://metafood.org/rating/11>;
+  gr:legalName "HOT TAKE";
+  gr:description "Try the authentic Chinese food cooked in real Chinese sauces. Order food online from HOT TAKE, #1 Chinese takeaway in a. Satisfaction guaranteed.";
+  food:hasCuisine "['Chinese', 'Desserts', 'Noodles']" .
+
+<http://metafood.org/rating/11> a food:Rating;
+  food:hasRatingCount "4"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 4.6E0 .
+
+<http://metafood.org/OrderSpecification/11> a food:OrderSpecification .
+
+<http://metafood.org/menu/50> a fo:Menu .
+
+<http://metafood.org/address/11> a ic:Address;
+  ic:hasCity "London";
+  ic:hasPostalCode "SW11 3BL";
+  ic:hasStreet "Battersea Park Road";
+  ic:hasStreetNumber "545"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.1471529332499706E1;
+  geo:long -1.6740797095569304E-1 .
+
+<http://metafood.org/menu/50> food:hasPrice 7.29E0 .
+
+<http://metafood.org/restaurant/11> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/11>;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/11>;
+  gr:offers <http://metafood.org/menu/50>, <http://metafood.org/breakfast/11> .
+
+<http://metafood.org/PaymentMethodCash/11> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/11> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/11> a food:Breakfast .
+
+<http://metafood.org/mainDish/11> a food:MainDish .
+
+<http://metafood.org/restaurant/11> food:hasDataSource "foodhub";
+  gr:offers <http://metafood.org/mainDish/11>, <http://metafood.org/snack/11> .
+
+<http://metafood.org/snack/11> a food:Snack .
+
+<http://metafood.org/OrderSpecification/12> a food:OrderSpecification .
+
+<http://metafood.org/address/12> geo:lat 5.1471561523164596E1;
+  geo:long -1.6744638681404744E-1 .
+
+<http://metafood.org/menu/51> gr:legalName "Carbonara Spaghetti Pasta" .
+
+<http://metafood.org/restaurant/12> food:hasPhone "02077380712"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasAddress <http://metafood.org/address/12>;
+  ic:hasWebSite "laparmapizzeria-battersea.co.uk";
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/12> .
+
+<http://metafood.org/DeliverySpecification/12> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 3.0E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/menu/51> a fo:Menu .
+
+<http://metafood.org/rating/12> a food:Rating;
+  food:hasRatingCount "-1"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 0.0E0 .
+
+<http://metafood.org/restaurant/12> a food:Restaurant;
+  food:hasCuisine "['Desserts', 'Drinks', 'Pasta']";
+  food:hasRating <http://metafood.org/rating/12>;
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/12>;
+  gr:description "Order the Tastiest Pizzas at amazing prices in London. Order online or take it away, amazing food served fresh and hot. Get sides, dips, drinks and desserts.";
+  gr:legalName "La Parma Pizzeria Battersea" .
+
+<http://metafood.org/address/12> a ic:Address;
+  ic:hasCity "London";
+  ic:hasPostalCode "SW11 3BL";
+  ic:hasStreet "Battersea Park Road";
+  ic:hasStreetNumber "545"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://metafood.org/OrderSpecification/12> food:minOrder 5.0E0;
+  food:waitingTime 1.0E1 .
+
+<http://metafood.org/menu/51> food:hasPrice 6.49E0;
+  gr:description "Bacon and organic egg in cream sauce with parmesan" .
+
+<http://metafood.org/restaurant/12> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/12>;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/12>;
+  gr:offers <http://metafood.org/menu/51>, <http://metafood.org/breakfast/12> .
+
+<http://metafood.org/PaymentMethodCash/12> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/12> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/12> a food:Breakfast .
+
+<http://metafood.org/mainDish/12> a food:MainDish .
+
+<http://metafood.org/restaurant/12> food:hasDataSource "foodhub";
+  gr:offers <http://metafood.org/mainDish/12>;
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/12>;
+  gr:offers <http://metafood.org/snack/12> .
+
+<http://metafood.org/snack/12> a food:Snack .
+
+<http://metafood.org/DeliverySpecification/12> food:deliveryCharge 2.0E0;
+  food:deliveryTime 3.0E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/PaymentMethodCash/12> a food:PaymentMethodCash .
+
+<http://metafood.org/rating/12> a food:Rating;
+  food:hasRatingCount "-1"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 0.0E0 .
+
+<http://metafood.org/restaurant/12> food:hasOrderSpecification <http://metafood.org/OrderSpecification/12>;
+  a food:Restaurant;
+  food:hasRating <http://metafood.org/rating/12>;
+  gr:description "Order the Tastiest Pizzas at amazing prices in London. Order online or take it away, amazing food served fresh and hot. Get sides, dips, drinks and desserts.";
+  gr:legalName "La Parma Pizzeria Battersea";
+  food:hasCuisine "['Desserts', 'Drinks', 'Pasta']";
+  gr:offers <http://metafood.org/menu/52> .
+
+<http://metafood.org/menu/52> a fo:Menu;
+  food:hasPrice 6.95E0 .
+
+<http://metafood.org/OrderSpecification/12> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 1.0E1 .
+
+<http://metafood.org/address/12> a ic:Address;
+  ic:hasCity "London";
+  ic:hasPostalCode "SW11 3BL";
+  ic:hasStreet "Battersea Park Road";
+  ic:hasStreetNumber "545"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.1471561523164596E1;
+  geo:long -1.6744638681404744E-1 .
+
+<http://metafood.org/restaurant/12> food:hasPhone "02077380712"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/12>;
+  ic:hasAddress <http://metafood.org/address/12>;
+  ic:hasWebSite "laparmapizzeria-battersea.co.uk";
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/12> .
+
+<http://metafood.org/menu/52> gr:legalName "10\" Margherita" .
+
+<http://metafood.org/DeliverySpecification/12> a food:DeliverySpecification .
+
+<http://metafood.org/PaymentMethodCash/12> food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/12> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/12> a food:Breakfast .
+
+<http://metafood.org/restaurant/12> food:hasDataSource "foodhub";
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/12>;
+  gr:offers <http://metafood.org/breakfast/12>, <http://metafood.org/mainDish/12>, <http://metafood.org/snack/12>;
+  food:hasRating <http://metafood.org/rating/12> .
+
+<http://metafood.org/mainDish/12> a food:MainDish .
+
+<http://metafood.org/snack/12> a food:Snack .
+
+<http://metafood.org/rating/12> a food:Rating;
+  food:hasRatingCount "-1"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 0.0E0 .
+
+<http://metafood.org/PaymentMethodCash/12> a food:PaymentMethodCash .
+
+<http://metafood.org/OrderSpecification/12> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 1.0E1 .
+
+<http://metafood.org/menu/53> a fo:Menu;
+  gr:legalName "Pomodoro Penne Pasta" .
+
+<http://metafood.org/restaurant/12> a food:Restaurant;
+  food:hasCuisine "['Desserts', 'Drinks', 'Pasta']";
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/12>;
+  gr:description "Order the Tastiest Pizzas at amazing prices in London. Order online or take it away, amazing food served fresh and hot. Get sides, dips, drinks and desserts.";
+  gr:legalName "La Parma Pizzeria Battersea" .
+
+<http://metafood.org/address/12> a ic:Address;
+  ic:hasCity "London";
+  ic:hasPostalCode "SW11 3BL";
+  ic:hasStreet "Battersea Park Road";
+  ic:hasStreetNumber "545"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.1471561523164596E1;
+  geo:long -1.6744638681404744E-1 .
+
+<http://metafood.org/restaurant/12> food:hasPhone "02077380712"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasAddress <http://metafood.org/address/12>;
+  ic:hasWebSite "laparmapizzeria-battersea.co.uk";
+  gr:offers <http://metafood.org/menu/53> .
+
+<http://metafood.org/menu/53> food:hasPrice 6.49E0;
+  gr:description "Garlic and fresh basil in tomato sauce" .
+
+<http://metafood.org/DeliverySpecification/12> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 3.0E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/PaymentMethodCash/12> food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/restaurant/12> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/12>;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/12>;
+  gr:offers <http://metafood.org/breakfast/12>, <http://metafood.org/mainDish/12>, <http://metafood.org/snack/12>;
+  food:hasDataSource "foodhub" .
+
+<http://metafood.org/PaymentMethodCreditCard/12> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/12> a food:Breakfast .
+
+<http://metafood.org/mainDish/12> a food:MainDish .
+
+<http://metafood.org/snack/12> a food:Snack .
+
+<http://metafood.org/address/12> a ic:Address;
+  ic:hasCity "London";
+  ic:hasPostalCode "SW11 3BL";
+  ic:hasStreet "Battersea Park Road";
+  ic:hasStreetNumber "545"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.1471561523164596E1;
+  geo:long -1.6744638681404744E-1 .
+
+<http://metafood.org/DeliverySpecification/12> food:deliveryTime 3.0E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/restaurant/12> a food:Restaurant;
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/12>;
+  food:hasPhone "02077380712"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasAddress <http://metafood.org/address/12>;
+  food:hasCuisine "['Desserts', 'Drinks', 'Pasta']";
+  ic:hasWebSite "laparmapizzeria-battersea.co.uk";
+  gr:description "Order the Tastiest Pizzas at amazing prices in London. Order online or take it away, amazing food served fresh and hot. Get sides, dips, drinks and desserts.";
+  gr:legalName "La Parma Pizzeria Battersea";
+  food:hasRating <http://metafood.org/rating/12> .
+
+<http://metafood.org/DeliverySpecification/12> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0 .
+
+<http://metafood.org/rating/12> a food:Rating;
+  food:hasRatingCount "-1"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 0.0E0 .
+
+<http://metafood.org/OrderSpecification/12> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 1.0E1 .
+
+<http://metafood.org/restaurant/12> food:hasOrderSpecification <http://metafood.org/OrderSpecification/12>;
+  gr:offers <http://metafood.org/menu/54>;
+  food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/12> .
+
+<http://metafood.org/menu/54> a fo:Menu;
+  food:hasPrice 1.245E1;
+  gr:legalName "15\" Pepperoni Plus" .
+
+<http://metafood.org/PaymentMethodCash/12> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/12> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/restaurant/12> food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/12>;
+  gr:offers <http://metafood.org/breakfast/12>;
+  food:hasDataSource "foodhub";
+  gr:offers <http://metafood.org/mainDish/12>, <http://metafood.org/snack/12> .
+
+<http://metafood.org/breakfast/12> a food:Breakfast .
+
+<http://metafood.org/mainDish/12> a food:MainDish .
+
+<http://metafood.org/snack/12> a food:Snack .
+
+<http://metafood.org/address/12> ic:hasStreet "Battersea Park Road";
+  ic:hasStreetNumber "545"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.1471561523164596E1;
+  geo:long -1.6744638681404744E-1 .
+
+<http://metafood.org/rating/12> a food:Rating .
+
+<http://metafood.org/DeliverySpecification/12> food:deliveryCharge 2.0E0;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/restaurant/12> a food:Restaurant;
+  food:hasCuisine "['Desserts', 'Drinks', 'Pasta']";
+  food:hasPhone "02077380712"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasAddress <http://metafood.org/address/12>;
+  ic:hasWebSite "laparmapizzeria-battersea.co.uk";
+  gr:description "Order the Tastiest Pizzas at amazing prices in London. Order online or take it away, amazing food served fresh and hot. Get sides, dips, drinks and desserts.";
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/12>;
+  gr:legalName "La Parma Pizzeria Battersea" .
+
+<http://metafood.org/address/12> a ic:Address;
+  ic:hasCity "London";
+  ic:hasPostalCode "SW11 3BL" .
+
+<http://metafood.org/DeliverySpecification/12> a food:DeliverySpecification;
+  food:deliveryTime 3.0E1 .
+
+<http://metafood.org/rating/12> food:hasRatingCount "-1"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 0.0E0 .
+
+<http://metafood.org/restaurant/12> food:hasOrderSpecification <http://metafood.org/OrderSpecification/12>;
+  food:hasRating <http://metafood.org/rating/12> .
+
+<http://metafood.org/OrderSpecification/12> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 1.0E1 .
+
+<http://metafood.org/menu/55> a fo:Menu;
+  food:hasPrice 9.95E0;
+  gr:legalName "10\" Messina" .
+
+<http://metafood.org/restaurant/12> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/12>;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/12>;
+  gr:offers <http://metafood.org/menu/55>, <http://metafood.org/breakfast/12> .
+
+<http://metafood.org/PaymentMethodCash/12> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/12> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/12> a food:Breakfast .
+
+<http://metafood.org/mainDish/12> a food:MainDish .
+
+<http://metafood.org/restaurant/12> food:hasDataSource "foodhub";
+  gr:offers <http://metafood.org/mainDish/12>, <http://metafood.org/snack/12> .
+
+<http://metafood.org/snack/12> a food:Snack .
+
+<http://metafood.org/restaurant/13> food:hasCuisine "['Burgers', 'Kebab', 'Pasta']" .
+
+<http://metafood.org/address/13> a ic:Address;
+  ic:hasCity "Brixton";
+  ic:hasPostalCode "SW9 8RR";
+  ic:hasStreet "Coldharbour Lane";
+  ic:hasStreetNumber "231"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.1465323817543194E1;
+  geo:long -1.0296958251490462E-1 .
+
+<http://metafood.org/menu/56> a fo:Menu .
+
+<http://metafood.org/OrderSpecification/13> food:minOrder 5.0E0;
+  food:waitingTime 1.0E1 .
+
+<http://metafood.org/restaurant/13> food:hasOrderSpecification <http://metafood.org/OrderSpecification/13>;
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/13>;
+  food:hasPhone "02077332178"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasAddress <http://metafood.org/address/13>;
+  ic:hasWebSite "londonfastfood.com" .
+
+<http://metafood.org/DeliverySpecification/13> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 3.0E1;
+  ic:hasPostalCode "SW9" .
+
+<http://metafood.org/OrderSpecification/13> a food:OrderSpecification .
+
+<http://metafood.org/rating/13> a food:Rating;
+  food:hasRatingCount "3"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 0.0E0 .
+
+<http://metafood.org/restaurant/13> a food:Restaurant;
+  food:hasRating <http://metafood.org/rating/13>;
+  gr:description "Order the Tastiest Pizzas at amazing prices in London. Order online or take it away, amazing food served fresh and hot. Get sides, dips, drinks and desserts.";
+  gr:legalName "London Fast Food";
+  gr:offers <http://metafood.org/menu/56>;
+  food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/13> .
+
+<http://metafood.org/menu/56> food:hasPrice 2.599E1;
+  gr:description "Any 2x Large Pizza, Any 2x Side orders. Any2x dips and  1.5ltr Bottle of drink";
+  gr:legalName "Large Double Meal" .
+
+<http://metafood.org/PaymentMethodCash/13> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/13> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/restaurant/13> food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/13>;
+  gr:offers <http://metafood.org/breakfast/13>;
+  food:hasDataSource "foodhub";
+  gr:offers <http://metafood.org/mainDish/13>;
+  food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/13>;
+  a food:Restaurant;
+  gr:offers <http://metafood.org/snack/13> .
+
+<http://metafood.org/breakfast/13> a food:Breakfast .
+
+<http://metafood.org/mainDish/13> a food:MainDish .
+
+<http://metafood.org/snack/13> a food:Snack .
+
+<http://metafood.org/PaymentMethodCash/13> food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/restaurant/13> food:hasCuisine "['Burgers', 'Kebab', 'Pasta']";
+  gr:description "Order the Tastiest Pizzas at amazing prices in London. Order online or take it away, amazing food served fresh and hot. Get sides, dips, drinks and desserts.";
+  gr:legalName "London Fast Food" .
+
+<http://metafood.org/address/13> a ic:Address;
+  ic:hasCity "Brixton";
+  ic:hasPostalCode "SW9 8RR";
+  ic:hasStreet "Coldharbour Lane";
+  ic:hasStreetNumber "231"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.1465323817543194E1;
+  geo:long -1.0296958251490462E-1 .
+
+<http://metafood.org/restaurant/13> food:hasPhone "02077332178"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasAddress <http://metafood.org/address/13>;
+  ic:hasWebSite "londonfastfood.com";
+  gr:offers <http://metafood.org/mainDish/13> .
+
+<http://metafood.org/mainDish/13> a food:MainDish .
+
+<http://metafood.org/DeliverySpecification/13> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 3.0E1;
+  ic:hasPostalCode "SW9" .
+
+<http://metafood.org/restaurant/13> food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/13>;
+  gr:offers <http://metafood.org/breakfast/13> .
+
+<http://metafood.org/rating/13> a food:Rating;
+  food:hasRatingCount "3"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 0.0E0 .
+
+<http://metafood.org/breakfast/13> a food:Breakfast .
+
+<http://metafood.org/restaurant/13> food:hasRating <http://metafood.org/rating/13>;
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/13> .
+
+<http://metafood.org/OrderSpecification/13> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 1.0E1 .
+
+<http://metafood.org/menu/57> a fo:Menu;
+  food:hasPrice 9.99E0;
+  gr:legalName "12\" Margherita" .
+
+<http://metafood.org/restaurant/13> food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/13>;
+  gr:offers <http://metafood.org/menu/57>;
+  food:hasDataSource "foodhub" .
+
+<http://metafood.org/PaymentMethodCreditCard/13> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/PaymentMethodCash/13> a food:PaymentMethodCash .
+
+<http://metafood.org/menu/58> food:hasPrice 4.99E0 .
+
+<http://metafood.org/restaurant/13> food:hasPhone "02077332178"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasWebSite "londonfastfood.com";
+  gr:offers <http://metafood.org/menu/58> .
+
+<http://metafood.org/DeliverySpecification/13> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 3.0E1;
+  ic:hasPostalCode "SW9" .
+
+<http://metafood.org/menu/58> a fo:Menu;
+  gr:legalName "Vegetable Lasagne" .
+
+<http://metafood.org/restaurant/13> food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/13> .
+
+<http://metafood.org/rating/13> a food:Rating;
+  food:hasRatingCount "3"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 0.0E0 .
+
+<http://metafood.org/OrderSpecification/13> a food:OrderSpecification;
+  food:minOrder 5.0E0 .
+
+<http://metafood.org/restaurant/13> a food:Restaurant;
+  food:hasCuisine "['Burgers', 'Kebab', 'Pasta']";
+  food:hasRating <http://metafood.org/rating/13>;
+  gr:description "Order the Tastiest Pizzas at amazing prices in London. Order online or take it away, amazing food served fresh and hot. Get sides, dips, drinks and desserts.";
+  gr:legalName "London Fast Food" .
+
+<http://metafood.org/address/13> a ic:Address;
+  ic:hasCity "Brixton";
+  ic:hasPostalCode "SW9 8RR";
+  ic:hasStreet "Coldharbour Lane";
+  ic:hasStreetNumber "231"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.1465323817543194E1;
+  geo:long -1.0296958251490462E-1 .
+
+<http://metafood.org/restaurant/13> food:hasOrderSpecification <http://metafood.org/OrderSpecification/13>;
+  ic:hasAddress <http://metafood.org/address/13>;
+  food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/13> .
+
+<http://metafood.org/OrderSpecification/13> food:waitingTime 1.0E1 .
+
+<http://metafood.org/PaymentMethodCash/13> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/13> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/restaurant/13> food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/13>;
+  gr:offers <http://metafood.org/breakfast/13>, <http://metafood.org/mainDish/13>, <http://metafood.org/snack/13>;
+  food:hasDataSource "foodhub" .
+
+<http://metafood.org/breakfast/13> a food:Breakfast .
+
+<http://metafood.org/mainDish/13> a food:MainDish .
+
+<http://metafood.org/snack/13> a food:Snack .
+
+<http://metafood.org/OrderSpecification/13> a food:OrderSpecification .
+
+<http://metafood.org/address/13> ic:hasStreetNumber "231"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.1465323817543194E1;
+  geo:long -1.0296958251490462E-1 .
+
+<http://metafood.org/menu/59> a fo:Menu .
+
+<http://metafood.org/restaurant/13> food:hasPhone "02077332178"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasAddress <http://metafood.org/address/13>;
+  ic:hasWebSite "londonfastfood.com" .
+
+<http://metafood.org/DeliverySpecification/13> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 3.0E1;
+  ic:hasPostalCode "SW9" .
+
+<http://metafood.org/restaurant/13> food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/13>;
+  food:hasRating <http://metafood.org/rating/13>;
+  a food:Restaurant;
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/13>;
+  gr:legalName "London Fast Food" .
+
+<http://metafood.org/rating/13> a food:Rating;
+  food:hasRatingCount "3"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 0.0E0 .
+
+<http://metafood.org/OrderSpecification/13> food:waitingTime 1.0E1;
+  food:minOrder 5.0E0 .
+
+<http://metafood.org/restaurant/13> food:hasCuisine "['Burgers', 'Kebab', 'Pasta']";
+  gr:description "Order the Tastiest Pizzas at amazing prices in London. Order online or take it away, amazing food served fresh and hot. Get sides, dips, drinks and desserts." .
+
+<http://metafood.org/address/13> a ic:Address;
+  ic:hasCity "Brixton";
+  ic:hasPostalCode "SW9 8RR";
+  ic:hasStreet "Coldharbour Lane" .
+
+<http://metafood.org/menu/59> food:hasPrice 1.495E1;
+  gr:legalName "15\" BBQ Beast" .
+
+<http://metafood.org/restaurant/13> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/13>;
+  gr:offers <http://metafood.org/menu/59> .
+
+<http://metafood.org/PaymentMethodCash/13> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/13> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/restaurant/13> food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/13>;
+  gr:offers <http://metafood.org/breakfast/13>, <http://metafood.org/mainDish/13>, <http://metafood.org/snack/13>;
+  food:hasDataSource "foodhub" .
+
+<http://metafood.org/breakfast/13> a food:Breakfast .
+
+<http://metafood.org/mainDish/13> a food:MainDish .
+
+<http://metafood.org/snack/13> a food:Snack .
+
+<http://metafood.org/rating/13> food:hasRatingValue 0.0E0 .
+
+<http://metafood.org/address/13> geo:long -1.0296958251490462E-1 .
+
+<http://metafood.org/restaurant/13> a food:Restaurant;
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/13>;
+  food:hasPhone "02077332178"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasAddress <http://metafood.org/address/13>;
+  ic:hasWebSite "londonfastfood.com";
+  gr:description "Order the Tastiest Pizzas at amazing prices in London. Order online or take it away, amazing food served fresh and hot. Get sides, dips, drinks and desserts.";
+  gr:legalName "London Fast Food";
+  food:hasCuisine "['Burgers', 'Kebab', 'Pasta']" .
+
+<http://metafood.org/DeliverySpecification/13> food:deliveryCharge 2.0E0;
+  food:deliveryTime 3.0E1 .
+
+<http://metafood.org/rating/13> a food:Rating .
+
+<http://metafood.org/address/13> a ic:Address;
+  ic:hasCity "Brixton";
+  ic:hasPostalCode "SW9 8RR";
+  ic:hasStreet "Coldharbour Lane";
+  ic:hasStreetNumber "231"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.1465323817543194E1 .
+
+<http://metafood.org/DeliverySpecification/13> a food:DeliverySpecification;
+  ic:hasPostalCode "SW9" .
+
+<http://metafood.org/rating/13> food:hasRatingCount "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://metafood.org/restaurant/13> food:hasRating <http://metafood.org/rating/13>;
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/13> .
+
+<http://metafood.org/OrderSpecification/13> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 1.0E1 .
+
+<http://metafood.org/menu/60> a fo:Menu;
+  food:hasPrice 3.49E0;
+  gr:legalName "6pcs Spicy BBQ Wings" .
+
+<http://metafood.org/restaurant/13> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/13>;
+  gr:offers <http://metafood.org/menu/60> .
+
+<http://metafood.org/PaymentMethodCash/13> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/13> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/restaurant/13> food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/13>;
+  gr:offers <http://metafood.org/breakfast/13>, <http://metafood.org/mainDish/13>, <http://metafood.org/snack/13>;
+  food:hasDataSource "foodhub" .
+
+<http://metafood.org/breakfast/13> a food:Breakfast .
+
+<http://metafood.org/mainDish/13> a food:MainDish .
+
+<http://metafood.org/snack/13> a food:Snack .
+
+<http://metafood.org/address/14> ic:hasCity "London";
+  ic:hasPostalCode "SE11 4RN";
+  ic:hasStreet "Newington Butts" .
+
+<http://metafood.org/DeliverySpecification/14> food:deliveryTime 5.0E1 .
+
+<http://metafood.org/menu/61> a fo:Menu;
+  gr:legalName "5. Bbq Spare Ribs" .
+
+<http://metafood.org/rating/14> a food:Rating .
+
+<http://metafood.org/restaurant/14> food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/14>;
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/14> .
+
+<http://metafood.org/OrderSpecification/14> food:minOrder 1.5E1;
+  food:waitingTime 2.0E1 .
+
+<http://metafood.org/address/14> ic:hasStreetNumber "150"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.149097E1;
+  geo:long -1.03722E-1 .
+
+<http://metafood.org/restaurant/14> food:hasPhone "02075826655"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasAddress <http://metafood.org/address/14>;
+  ic:hasWebSite "mrmaonline.co.uk" .
+
+<http://metafood.org/DeliverySpecification/14> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/OrderSpecification/14> a food:OrderSpecification .
+
+<http://metafood.org/restaurant/14> a food:Restaurant;
+  food:hasRating <http://metafood.org/rating/14>;
+  gr:description "Mr Ma Kitchen, is a takeaway based in Newington Butts , London. offer great tasting Chinese, Sweet and Sour Dishes, Korean, Japanese,Cantonese and oriental food. Order online at Mr Ma Chinese London,London";
+  food:hasCuisine "['Noodles', 'Japanese', 'Chinese']";
+  gr:legalName "Mr Ma Kitchen" .
+
+<http://metafood.org/rating/14> food:hasRatingCount "3"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 4.5E0 .
+
+<http://metafood.org/address/14> a ic:Address .
+
+<http://metafood.org/menu/61> food:hasPrice 8.9E0;
+  gr:description "Sauce" .
+
+<http://metafood.org/restaurant/14> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/14>;
+  gr:offers <http://metafood.org/menu/61> .
+
+<http://metafood.org/PaymentMethodCash/14> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/14> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/restaurant/14> food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/14>;
+  gr:offers <http://metafood.org/breakfast/14>, <http://metafood.org/mainDish/14>, <http://metafood.org/snack/14>;
+  food:hasDataSource "foodhub";
+  gr:offers <http://metafood.org/menu/62> .
+
+<http://metafood.org/breakfast/14> a food:Breakfast .
+
+<http://metafood.org/mainDish/14> a food:MainDish .
+
+<http://metafood.org/snack/14> a food:Snack .
+
+<http://metafood.org/menu/62> food:hasPrice 1.19E1 .
+
+<http://metafood.org/restaurant/14> ic:hasWebSite "mrmaonline.co.uk" .
+
+<http://metafood.org/DeliverySpecification/14> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 5.0E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/restaurant/14> food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/14>;
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/14> .
+
+<http://metafood.org/rating/14> a food:Rating;
+  food:hasRatingCount "3"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 4.5E0 .
+
+<http://metafood.org/OrderSpecification/14> a food:OrderSpecification;
+  food:minOrder 1.5E1;
+  food:waitingTime 2.0E1 .
+
+<http://metafood.org/restaurant/14> a food:Restaurant;
+  food:hasCuisine "['Noodles', 'Japanese', 'Chinese']";
+  food:hasRating <http://metafood.org/rating/14>;
+  gr:description "Mr Ma Kitchen, is a takeaway based in Newington Butts , London. offer great tasting Chinese, Sweet and Sour Dishes, Korean, Japanese,Cantonese and oriental food. Order online at Mr Ma Chinese London,London";
+  gr:legalName "Mr Ma Kitchen" .
+
+<http://metafood.org/address/14> a ic:Address;
+  ic:hasCity "London";
+  ic:hasPostalCode "SE11 4RN";
+  ic:hasStreet "Newington Butts";
+  ic:hasStreetNumber "150"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.149097E1;
+  geo:long -1.03722E-1 .
+
+<http://metafood.org/menu/62> a fo:Menu;
+  gr:legalName "30. Salt and Pepper Squid" .
+
+<http://metafood.org/restaurant/14> food:hasPhone "02075826655"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/14>;
+  ic:hasAddress <http://metafood.org/address/14> .
+
+<http://metafood.org/PaymentMethodCash/14> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/14> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/restaurant/14> food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/14>;
+  gr:offers <http://metafood.org/breakfast/14>, <http://metafood.org/mainDish/14>, <http://metafood.org/snack/14>;
+  food:hasDataSource "foodhub";
+  ic:hasWebSite "mrmaonline.co.uk" .
+
+<http://metafood.org/breakfast/14> a food:Breakfast .
+
+<http://metafood.org/mainDish/14> a food:MainDish .
+
+<http://metafood.org/snack/14> a food:Snack .
+
+<http://metafood.org/address/14> a ic:Address;
+  ic:hasCity "London";
+  ic:hasPostalCode "SE11 4RN";
+  ic:hasStreet "Newington Butts";
+  ic:hasStreetNumber "150"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.149097E1;
+  geo:long -1.03722E-1 .
+
+<http://metafood.org/DeliverySpecification/14> a food:DeliverySpecification;
+  food:deliveryTime 5.0E1;
+  food:deliveryCharge 2.0E0 .
+
+<http://metafood.org/restaurant/14> a food:Restaurant;
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/14>;
+  food:hasPhone "02075826655"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasCuisine "['Noodles', 'Japanese', 'Chinese']";
+  ic:hasAddress <http://metafood.org/address/14>;
+  gr:description "Mr Ma Kitchen, is a takeaway based in Newington Butts , London. offer great tasting Chinese, Sweet and Sour Dishes, Korean, Japanese,Cantonese and oriental food. Order online at Mr Ma Chinese London,London";
+  gr:legalName "Mr Ma Kitchen" .
+
+<http://metafood.org/DeliverySpecification/14> ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/rating/14> a food:Rating;
+  food:hasRatingCount "3"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 4.5E0 .
+
+<http://metafood.org/restaurant/14> food:hasRating <http://metafood.org/rating/14>;
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/14> .
+
+<http://metafood.org/OrderSpecification/14> a food:OrderSpecification;
+  food:minOrder 1.5E1;
+  food:waitingTime 2.0E1 .
+
+<http://metafood.org/menu/63> a fo:Menu;
+  food:hasPrice 1.09E1;
+  gr:description "Mock duck, made from soya, served with pancakes 6pcs, thinly cut spring onions, cucumber and hoi sin sauce";
+  gr:legalName "3b. Vegetarian Crispy Duck" .
+
+<http://metafood.org/restaurant/14> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/14>;
+  gr:offers <http://metafood.org/menu/63> .
+
+<http://metafood.org/PaymentMethodCash/14> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/14> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/restaurant/14> food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/14>;
+  gr:offers <http://metafood.org/breakfast/14>, <http://metafood.org/mainDish/14>, <http://metafood.org/snack/14>;
+  food:hasDataSource "foodhub" .
+
+<http://metafood.org/breakfast/14> a food:Breakfast .
+
+<http://metafood.org/mainDish/14> a food:MainDish .
+
+<http://metafood.org/snack/14> a food:Snack .
+
+<http://metafood.org/address/14> ic:hasPostalCode "SE11 4RN";
+  ic:hasStreet "Newington Butts";
+  ic:hasStreetNumber "150"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.149097E1;
+  geo:long -1.03722E-1 .
+
+<http://metafood.org/menu/64> a fo:Menu .
+
+<http://metafood.org/restaurant/14> food:hasPhone "02075826655"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasAddress <http://metafood.org/address/14>;
+  ic:hasWebSite "mrmaonline.co.uk" .
+
+<http://metafood.org/DeliverySpecification/14> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 5.0E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/restaurant/14> food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/14>;
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/14>;
+  food:hasRating <http://metafood.org/rating/14> .
+
+<http://metafood.org/rating/14> a food:Rating;
+  food:hasRatingCount "3"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 4.5E0 .
+
+<http://metafood.org/OrderSpecification/14> food:waitingTime 2.0E1 .
+
+<http://metafood.org/restaurant/14> a food:Restaurant;
+  food:hasCuisine "['Noodles', 'Japanese', 'Chinese']";
+  gr:description "Mr Ma Kitchen, is a takeaway based in Newington Butts , London. offer great tasting Chinese, Sweet and Sour Dishes, Korean, Japanese,Cantonese and oriental food. Order online at Mr Ma Chinese London,London";
+  gr:legalName "Mr Ma Kitchen" .
+
+<http://metafood.org/OrderSpecification/14> a food:OrderSpecification;
+  food:minOrder 1.5E1 .
+
+<http://metafood.org/address/14> a ic:Address;
+  ic:hasCity "London" .
+
+<http://metafood.org/menu/64> food:hasPrice 5.9E0;
+  gr:legalName "98b. Large Egg Fried Rice" .
+
+<http://metafood.org/restaurant/14> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/14>;
+  gr:offers <http://metafood.org/menu/64> .
+
+<http://metafood.org/PaymentMethodCash/14> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/14> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/restaurant/14> food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/14>;
+  gr:offers <http://metafood.org/breakfast/14>, <http://metafood.org/mainDish/14>, <http://metafood.org/snack/14>;
+  food:hasDataSource "foodhub" .
+
+<http://metafood.org/breakfast/14> a food:Breakfast .
+
+<http://metafood.org/mainDish/14> a food:MainDish .
+
+<http://metafood.org/snack/14> a food:Snack .
+
+<http://metafood.org/address/14> a ic:Address;
+  ic:hasCity "London";
+  ic:hasPostalCode "SE11 4RN";
+  ic:hasStreet "Newington Butts";
+  ic:hasStreetNumber "150"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.149097E1;
+  geo:long -1.03722E-1 .
+
+<http://metafood.org/restaurant/14> food:hasOrderSpecification <http://metafood.org/OrderSpecification/14>;
+  ic:hasAddress <http://metafood.org/address/14>;
+  food:hasPhone "02075826655"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasWebSite "mrmaonline.co.uk" .
+
+<http://metafood.org/OrderSpecification/14> food:minOrder 1.5E1;
+  food:waitingTime 2.0E1;
+  a food:OrderSpecification .
+
+<http://metafood.org/rating/14> a food:Rating;
+  food:hasRatingValue 4.5E0 .
+
+<http://metafood.org/DeliverySpecification/14> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 5.0E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/restaurant/14> a food:Restaurant;
+  food:hasCuisine "['Noodles', 'Japanese', 'Chinese']";
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/14>;
+  food:hasRating <http://metafood.org/rating/14>;
+  gr:description "Mr Ma Kitchen, is a takeaway based in Newington Butts , London. offer great tasting Chinese, Sweet and Sour Dishes, Korean, Japanese,Cantonese and oriental food. Order online at Mr Ma Chinese London,London";
+  gr:legalName "Mr Ma Kitchen" .
+
+<http://metafood.org/rating/14> food:hasRatingCount "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://metafood.org/menu/65> a fo:Menu;
+  food:hasPrice 8.9E0;
+  gr:description "6Pcs Pork Served with a Vinegar Dip ";
+  gr:legalName "15.  Grilled Peking Dumplings " .
+
+<http://metafood.org/restaurant/14> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/14>;
+  gr:offers <http://metafood.org/menu/65> .
+
+<http://metafood.org/PaymentMethodCash/14> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/14> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/restaurant/14> food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/14>;
+  gr:offers <http://metafood.org/breakfast/14>, <http://metafood.org/mainDish/14>, <http://metafood.org/snack/14>;
+  food:hasDataSource "foodhub" .
+
+<http://metafood.org/breakfast/14> a food:Breakfast .
+
+<http://metafood.org/mainDish/14> a food:MainDish .
+
+<http://metafood.org/snack/14> a food:Snack .
+
+<http://metafood.org/restaurant/15> a food:Restaurant;
+  food:hasCuisine "['Burgers', 'Desserts', 'Mediterranean']";
+  gr:description "Napura in Nunhead offers desserts and drinks as fresh as they could get. Looking for the best-picked ones? Here are a few: Burgers,Desserts,Mediterranean. ";
+  gr:legalName "Napura" .
+
+<http://metafood.org/address/15> a ic:Address;
+  ic:hasCity "Nunhead Green";
+  ic:hasPostalCode "SE15 3QF";
+  ic:hasStreet "Nunhead Green";
+  ic:hasStreetNumber "30"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.1465398662852E1;
+  geo:long -5.817448374693113E-2 .
+
+<http://metafood.org/restaurant/15> food:hasPhone "02074503996"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasAddress <http://metafood.org/address/15>;
+  ic:hasWebSite "napurarestaurant.com" .
+
+<http://metafood.org/DeliverySpecification/15> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 3.0E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/restaurant/15> food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/15>;
+  food:hasRating <http://metafood.org/rating/15> .
+
+<http://metafood.org/rating/15> a food:Rating;
+  food:hasRatingCount "-1"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 0.0E0 .
+
+<http://metafood.org/OrderSpecification/15> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 1.0E1 .
+
+<http://metafood.org/restaurant/15> food:hasOrderSpecification <http://metafood.org/OrderSpecification/15> .
+
+<http://metafood.org/menu/66> a fo:Menu;
+  food:hasPrice 5.6E0;
+  gr:description "\"Wine of the King's City\" A beautiful aroma of wild fruits and berries.";
+  gr:legalName "Reguengos [Red]" .
+
+<http://metafood.org/restaurant/15> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/15>;
+  gr:offers <http://metafood.org/menu/66> .
+
+<http://metafood.org/PaymentMethodCash/15> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/15> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/restaurant/15> food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/15>;
+  gr:offers <http://metafood.org/breakfast/15>, <http://metafood.org/mainDish/15>, <http://metafood.org/snack/15>;
+  food:hasDataSource "foodhub" .
+
+<http://metafood.org/breakfast/15> a food:Breakfast .
+
+<http://metafood.org/mainDish/15> a food:MainDish .
+
+<http://metafood.org/snack/15> a food:Snack .
+
+<http://metafood.org/address/15> a ic:Address;
+  ic:hasCity "Nunhead Green";
+  ic:hasPostalCode "SE15 3QF" .
+
+<http://metafood.org/restaurant/15> a food:Restaurant;
+  food:hasCuisine "['Burgers', 'Desserts', 'Mediterranean']";
+  gr:description "Napura in Nunhead offers desserts and drinks as fresh as they could get. Looking for the best-picked ones? Here are a few: Burgers,Desserts,Mediterranean. ";
+  gr:legalName "Napura" .
+
+<http://metafood.org/address/15> ic:hasStreet "Nunhead Green";
+  ic:hasStreetNumber "30"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.1465398662852E1;
+  geo:long -5.817448374693113E-2 .
+
+<http://metafood.org/restaurant/15> food:hasPhone "02074503996"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasAddress <http://metafood.org/address/15>;
+  ic:hasWebSite "napurarestaurant.com" .
+
+<http://metafood.org/DeliverySpecification/15> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 3.0E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/restaurant/15> food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/15>;
+  food:hasRating <http://metafood.org/rating/15> .
+
+<http://metafood.org/rating/15> a food:Rating;
+  food:hasRatingCount "-1"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 0.0E0 .
+
+<http://metafood.org/OrderSpecification/15> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 1.0E1 .
+
+<http://metafood.org/restaurant/15> food:hasOrderSpecification <http://metafood.org/OrderSpecification/15> .
+
+<http://metafood.org/menu/67> a fo:Menu;
+  food:hasPrice 8.5E0;
+  gr:description "Calamari";
+  gr:legalName "Lulas Ã  Sevilhana" .
+
+<http://metafood.org/restaurant/15> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/15>;
+  gr:offers <http://metafood.org/menu/67> .
+
+<http://metafood.org/PaymentMethodCash/15> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/15> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/restaurant/15> food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/15>;
+  gr:offers <http://metafood.org/breakfast/15>, <http://metafood.org/mainDish/15>, <http://metafood.org/snack/15>;
+  food:hasDataSource "foodhub";
+  ic:hasAddress <http://metafood.org/address/15> .
+
+<http://metafood.org/breakfast/15> a food:Breakfast .
+
+<http://metafood.org/mainDish/15> a food:MainDish .
+
+<http://metafood.org/snack/15> a food:Snack .
+
+<http://metafood.org/rating/15> food:hasRatingValue 0.0E0 .
+
+<http://metafood.org/restaurant/15> food:hasPhone "02074503996"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasWebSite "napurarestaurant.com" .
+
+<http://metafood.org/menu/68> gr:legalName "Super Bock" .
+
+<http://metafood.org/DeliverySpecification/15> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 3.0E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/OrderSpecification/15> a food:OrderSpecification;
+  food:waitingTime 1.0E1 .
+
+<http://metafood.org/rating/15> a food:Rating .
+
+<http://metafood.org/restaurant/15> a food:Restaurant;
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/15>;
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/15>;
+  food:hasRating <http://metafood.org/rating/15>;
+  food:hasCuisine "['Burgers', 'Desserts', 'Mediterranean']";
+  gr:description "Napura in Nunhead offers desserts and drinks as fresh as they could get. Looking for the best-picked ones? Here are a few: Burgers,Desserts,Mediterranean. ";
+  gr:legalName "Napura" .
+
+<http://metafood.org/rating/15> food:hasRatingCount "-1"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://metafood.org/address/15> a ic:Address;
+  ic:hasCity "Nunhead Green";
+  ic:hasPostalCode "SE15 3QF";
+  ic:hasStreet "Nunhead Green";
+  ic:hasStreetNumber "30"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.1465398662852E1;
+  geo:long -5.817448374693113E-2 .
+
+<http://metafood.org/menu/68> a fo:Menu;
+  food:hasPrice 3.9E0 .
+
+<http://metafood.org/OrderSpecification/15> food:minOrder 5.0E0 .
+
+<http://metafood.org/restaurant/15> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/15>;
+  gr:offers <http://metafood.org/menu/68> .
+
+<http://metafood.org/PaymentMethodCash/15> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/15> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/restaurant/15> food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/15>;
+  gr:offers <http://metafood.org/breakfast/15>, <http://metafood.org/mainDish/15>, <http://metafood.org/snack/15>;
+  food:hasDataSource "foodhub" .
+
+<http://metafood.org/breakfast/15> a food:Breakfast .
+
+<http://metafood.org/mainDish/15> a food:MainDish .
+
+<http://metafood.org/snack/15> a food:Snack .
+
+<http://metafood.org/DeliverySpecification/15> food:deliveryTime 3.0E1 .
+
+<http://metafood.org/restaurant/15> food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/15> .
+
+<http://metafood.org/rating/15> a food:Rating;
+  food:hasRatingCount "-1"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 0.0E0 .
+
+<http://metafood.org/PaymentMethodCash/15> a food:PaymentMethodCash .
+
+<http://metafood.org/restaurant/15> food:hasRating <http://metafood.org/rating/15> .
+
+<http://metafood.org/OrderSpecification/15> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 1.0E1 .
+
+<http://metafood.org/menu/69> a fo:Menu;
+  food:hasPrice 1.45E1 .
+
+<http://metafood.org/restaurant/15> a food:Restaurant;
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/15>;
+  food:hasCuisine "['Burgers', 'Desserts', 'Mediterranean']";
+  gr:description "Napura in Nunhead offers desserts and drinks as fresh as they could get. Looking for the best-picked ones? Here are a few: Burgers,Desserts,Mediterranean. ";
+  gr:legalName "Napura";
+  gr:offers <http://metafood.org/menu/69> .
+
+<http://metafood.org/address/15> a ic:Address;
+  ic:hasCity "Nunhead Green";
+  ic:hasPostalCode "SE15 3QF";
+  ic:hasStreet "Nunhead Green";
+  ic:hasStreetNumber "30"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.1465398662852E1;
+  geo:long -5.817448374693113E-2 .
+
+<http://metafood.org/menu/69> gr:description "Softly scrambled cod, thin fries & eggs";
+  gr:legalName "Bacalhau Ã  BrÃ¡s" .
+
+<http://metafood.org/restaurant/15> food:hasPhone "02074503996"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasAddress <http://metafood.org/address/15>;
+  ic:hasWebSite "napurarestaurant.com" .
+
+<http://metafood.org/DeliverySpecification/15> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/PaymentMethodCash/15> food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/restaurant/15> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/15>;
+  food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/15>;
+  gr:offers <http://metafood.org/breakfast/15> .
+
+<http://metafood.org/PaymentMethodCreditCard/15> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/breakfast/15> a food:Breakfast .
+
+<http://metafood.org/mainDish/15> a food:MainDish .
+
+<http://metafood.org/restaurant/15> food:hasDataSource "foodhub";
+  gr:offers <http://metafood.org/mainDish/15>, <http://metafood.org/snack/15> .
+
+<http://metafood.org/snack/15> a food:Snack .
+
+<http://metafood.org/address/15> ic:hasPostalCode "SE15 3QF";
+  ic:hasStreet "Nunhead Green";
+  ic:hasStreetNumber "30"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.1465398662852E1;
+  geo:long -5.817448374693113E-2 .
+
+<http://metafood.org/menu/70> a fo:Menu .
+
+<http://metafood.org/restaurant/15> food:hasPhone "02074503996"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasAddress <http://metafood.org/address/15>;
+  food:hasRating <http://metafood.org/rating/15>;
+  ic:hasWebSite "napurarestaurant.com" .
+
+<http://metafood.org/DeliverySpecification/15> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 3.0E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/rating/15> a food:Rating;
+  food:hasRatingCount "-1"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 0.0E0 .
+
+<http://metafood.org/restaurant/15> a food:Restaurant;
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/15>;
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/15>;
+  gr:description "Napura in Nunhead offers desserts and drinks as fresh as they could get. Looking for the best-picked ones? Here are a few: Burgers,Desserts,Mediterranean. ";
+  food:hasCuisine "['Burgers', 'Desserts', 'Mediterranean']";
+  gr:legalName "Napura" .
+
+<http://metafood.org/OrderSpecification/15> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 1.0E1 .
+
+<http://metafood.org/address/15> a ic:Address;
+  ic:hasCity "Nunhead Green" .
+
+<http://metafood.org/menu/70> food:hasPrice 4.9E0;
+  gr:description "AntÃ£o Vaz, Perrum, Arinto. Crystal clear, citric colour. Floral, fruit. Youthful palate, clean, fresh, well balanced.";
+  gr:legalName "Abega De Pegoes [White]" .
+
+<http://metafood.org/restaurant/15> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/15>;
+  gr:offers <http://metafood.org/menu/70> .
+
+<http://metafood.org/PaymentMethodCash/15> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/15> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/restaurant/15> food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/15>;
+  gr:offers <http://metafood.org/breakfast/15>, <http://metafood.org/mainDish/15>, <http://metafood.org/snack/15>;
+  food:hasDataSource "foodhub" .
+
+<http://metafood.org/breakfast/15> a food:Breakfast .
+
+<http://metafood.org/mainDish/15> a food:MainDish .
+
+<http://metafood.org/snack/15> a food:Snack .
+
+<http://metafood.org/DeliverySpecification/16> food:deliveryCharge 2.0E0 .
+
+<http://metafood.org/address/16> ic:hasStreetNumber "44"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.1473754643256385E1;
+  geo:long -8.982613649947346E-2 .
+
+<http://metafood.org/rating/16> a food:Rating;
+  food:hasRatingValue 0.0E0 .
+
+<http://metafood.org/DeliverySpecification/16> a food:DeliverySpecification;
+  food:deliveryTime 4.0E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/restaurant/16> food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/16>;
+  a food:Restaurant;
+  food:hasPhone "02077035555"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasAddress <http://metafood.org/address/16>;
+  food:hasCuisine "['Desserts', 'Italian', 'Pasta']";
+  ic:hasWebSite "oreganoleafpizzeriaonline.co.uk";
+  gr:description "Order the Tastiest Pizzas at amazing prices in Camberwell. Order online or take it away, amazing food served fresh and hot. Get sides, dips, drinks and desserts.";
+  gr:legalName "Oregano Leaf Pizzeria" .
+
+<http://metafood.org/address/16> a ic:Address;
+  ic:hasCity "Camberwell";
+  ic:hasPostalCode "SE5 8QZ";
+  ic:hasStreet "Camberwell Church St" .
+
+<http://metafood.org/rating/16> food:hasRatingCount "4"^^<http://www.w3.org/2001/XMLSchema#int> .
+
+<http://metafood.org/restaurant/16> food:hasRating <http://metafood.org/rating/16>;
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/16> .
+
+<http://metafood.org/OrderSpecification/16> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 1.0E1 .
+
+<http://metafood.org/menu/71> a fo:Menu;
+  food:hasPrice 1.195E1;
+  gr:legalName "13\" Pepperoni Plus" .
+
+<http://metafood.org/restaurant/16> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/16>;
+  gr:offers <http://metafood.org/menu/71> .
+
+<http://metafood.org/PaymentMethodCash/16> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/PaymentMethodCreditCard/16> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/restaurant/16> food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/16>;
+  gr:offers <http://metafood.org/breakfast/16>, <http://metafood.org/mainDish/16>, <http://metafood.org/snack/16>;
+  food:hasDataSource "foodhub";
+  food:hasOrderSpecification <http://metafood.org/OrderSpecification/16> .
+
+<http://metafood.org/breakfast/16> a food:Breakfast .
+
+<http://metafood.org/mainDish/16> a food:MainDish .
+
+<http://metafood.org/snack/16> a food:Snack .
+
+<http://metafood.org/menu/72> a fo:Menu;
+  food:hasPrice 3.99E0;
+  gr:legalName "Chocolate Fudge Cake" .
+
+<http://metafood.org/restaurant/16> a food:Restaurant;
+  gr:legalName "Oregano Leaf Pizzeria";
+  gr:description "Order the Tastiest Pizzas at amazing prices in Camberwell. Order online or take it away, amazing food served fresh and hot. Get sides, dips, drinks and desserts.";
+  food:hasCuisine "['Desserts', 'Italian', 'Pasta']";
+  gr:offers <http://metafood.org/breakfast/16>, <http://metafood.org/menu/72> .
+
+<http://metafood.org/breakfast/16> a food:Breakfast .
+
+<http://metafood.org/address/16> a ic:Address;
+  ic:hasCity "Camberwell";
+  ic:hasPostalCode "SE5 8QZ";
+  ic:hasStreet "Camberwell Church St";
+  ic:hasStreetNumber "44"^^<http://www.w3.org/2001/XMLSchema#int>;
+  geo:lat 5.1473754643256385E1;
+  geo:long -8.982613649947346E-2 .
+
+<http://metafood.org/restaurant/16> food:acceptedPaymentCreditMethod <http://metafood.org/PaymentMethodCreditCard/16>;
+  food:hasPhone "02077035555"^^<http://www.w3.org/2001/XMLSchema#int>;
+  ic:hasAddress <http://metafood.org/address/16>;
+  ic:hasWebSite "oreganoleafpizzeriaonline.co.uk" .
+
+<http://metafood.org/PaymentMethodCreditCard/16> a gr:PaymentMethodCreditCard;
+  food:creditIsEnabled "YES" .
+
+<http://metafood.org/DeliverySpecification/16> a food:DeliverySpecification;
+  food:deliveryCharge 2.0E0;
+  food:deliveryTime 4.0E1;
+  ic:hasPostalCode "SW9 9" .
+
+<http://metafood.org/restaurant/16> food:acceptedPaymentCashMethod <http://metafood.org/PaymentMethodCash/16>;
+  food:hasDeliverySpecification <http://metafood.org/DeliverySpecification/16> .
+
+<http://metafood.org/PaymentMethodCash/16> a food:PaymentMethodCash;
+  food:cashIsEnabled "ENABLED" .
+
+<http://metafood.org/rating/16> a food:Rating;
+  food:hasRatingCount "4"^^<http://www.w3.org/2001/XMLSchema#int>;
+  food:hasRatingValue 0.0E0 .
+
+<http://metafood.org/restaurant/16> food:hasRating <http://metafood.org/rating/16> .
+
+<http://metafood.org/OrderSpecification/16> a food:OrderSpecification;
+  food:minOrder 5.0E0;
+  food:waitingTime 1.0E1 .
+
+<http://metafood.org/mainDish/16> a food:MainDish .
+
+<http://metafood.org/restaurant/16> food:hasDataSource "foodhub";
+  gr:offers <http://metafood.org/mainDish/16>, <http://metafood.org/snack/16> .
+
+<http://metafood.org/snack/16> a food:Snack .

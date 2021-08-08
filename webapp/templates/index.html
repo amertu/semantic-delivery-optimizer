@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<!-- Bootstrap + JQuery -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<!-- Local Js -->
+<script type="text/javascript" src="{{ url_for('static', filename='js/index_page.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/http_methods.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/sparql_queries.js') }}"></script>
+
+
+<style>
+    #list_product, #list_selected_product {
+        max-height: 200px;
+        margin-bottom: 10px;
+        overflow-y:scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    #card_product {
+        border: none;
+    }
+
+    button.list-group-item.list-group-item-action.product_item.disabled{
+        background-color: #ffecdf;
+    }
+
+    #table_suggestions {
+    counter-reset: rowNumber;
+    }
+
+    #table_suggestions tr:not(:first-child) {
+        counter-increment: rowNumber;
+    }
+
+    #table_suggestions tr td:first-child::before {
+        content: counter(rowNumber);
+        min-width: 1em;
+        margin-right: 0.5em;
+    }
+</style>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SemanticSystems - WebApp</title>
+    <script language="javascript" type="text/javascript">
+       $(document).ready(function () {
+          init();
+       });
+    </script>
+
+</head>
+<body>
+   <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="static/images/burger.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            SemanticSystems - Webapp
+        </a>
+   </nav>
+
+   <div class="container">
+       <div class="row">
+           <div class="col">
+               <!-- FILTER -->
+                   <div id="accordion">
+                       <div class="card">
+                           <div class="card-header" id="headingOne">
+                               <h5 class="mb-0">
+                                   <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                       Filter
+                                   </button>
+                               </h5>
+                           </div>
+                           <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                               <div class="card-body">
+                                   <div class="container">
+                                       <div class="row">
+                                           <div class="col-sm-8">
+                                               Payment method
+                                           </div>
+                                           <div class="col-sm-2">
+                                               <div class="form-check">
+                                                   <input type="checkbox" class="form-check-input checked" id="checkboxCash" checked>
+                                                   <label class="form-check-label" for="checkboxCash">Cash</label>
+                                               </div>
+                                           </div>
+                                           <div class="col-sm-2">
+                                               <div class="form-check">
+                                                   <input type="checkbox" class="form-check-input checked" id="checkboxCard" checked>
+                                                   <label class="form-check-label" for="checkboxChecked">Card</label>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="row">
+                                           <div class="col-sm-8">
+                                               Suggestion ordering
+                                           </div>
+                                           <div class="col-sm-2">
+                                               <div class="form-check">
+                                                   <input class="form-check-input" type="radio" name="exampleRadios" id="radioOrderingPrice" value="option1" checked>
+                                                   <label class="form-check-label" for="exampleRadios1">Price</label>
+                                               </div>
+                                           </div>
+                                           <div class="col-sm-2">
+                                               <div class="form-check">
+                                                   <input class="form-check-input" type="radio" name="exampleRadios" id="radioOrderingRating" value="option2">
+                                                   <label class="form-check-label" for="exampleRadios2">Rating</label>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+
+               <!-- SELECT PRODUCT -->
+               <div id="accordion">
+                   <div class="card">
+                       <div class="card-header" id="headingOne">
+                           <h5 class="mb-0">
+                               <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                                   Select Products
+                               </button>
+                           </h5>
+                           <div class="form-check">
+                               <input type="checkbox" class="form-check-input checked" id="checkboxAllProducts">
+                               <label class="form-check-label" for="checkboxChecked">Select all products</label>
+                           </div>
+                       </div>
+                       <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                           <div class="card-body">
+                               <div class="card bg-light">
+                                   <div class="card-body">
+                                       <div id="list_product" class="list-group">
+                                            </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+           <div class="col">
+                <!-- SELECTED PRODUCT -->
+               <div class="card bg-light">
+                   <div class="card-body">
+                       <h5 class="card-title">Selected Products:</h5>
+                       <div id="list_selected_product" class="list-group">
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+
+       <!-- RESULTING RESTAURANTS + METADATA -->
+       <div class="card text-center mt-5">
+           <div class="card-header">
+               Suggestions
+           </div>
+           <div class="card-body">
+               <table id="table_suggestions" class="table table-hover table-sm">
+                   <thead>
+                   <tr>
+                       <th scope="col">#</th>
+                       <th scope="col">Menu</th>
+                       <th scope="col">Restaurant</th>
+                       <th scope="col">Price</th>
+                       <th scope="col">Payment</th>
+                       <th scope="col">Rating</th>
+                   </tr>
+                   </thead>
+                   <tbody>
+                   </tbody>
+               </table>
+           </div>
+       </div>
+   </div>
+</body>
+</html>

@@ -1,0 +1,276 @@
+query 1:
+---------
+## It returns the delivery service name with restaurants names that delivers pasta in less than 30 minutes.
+PREFIX food: <http://metafood.org#>
+PREFIX ic: <http://ontology.eil.utoronto.ca/icontact.owl#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX fo: <http://purl.org/ontology/fo/>
+
+select ?deliveryService ?restaurantName ?phone ?menuName ?price ?deliveryTime where { 
+    
+    ?restaurant food:hasPhone ?phone.
+    ?restaurant gr:legalName ?restaurantName.
+    ?restaurant food:hasDataSource ?deliveryService.
+    
+    ?restaurant gr:offers ?menu.
+    ?menu a fo:Menu ;
+          food:hasPrice ?price;
+          gr:legalName ?menuName ;
+          	FILTER (CONTAINS(?menuName, "Pasta"))
+    
+    ?restaurant food:hasDeliverySpecification ?delivery.
+    ?delivery food:deliveryTime ?deliveryTime ;
+           	FILTER (?deliveryTime <= 30)
+  
+
+}
+
+
+
+query 2:
+---------
+## It returns the delivery service name with restaurants names which delivers menus that include chicken or crispy with free drink.
+
+PREFIX food: <http://metafood.org#>
+PREFIX ic: <http://ontology.eil.utoronto.ca/icontact.owl#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX fo: <http://purl.org/ontology/fo/>
+
+select ?deliveryService ?restaurantName ?phone ?menuName ?description ?price where { 
+
+    ?restaurant gr:legalName ?restaurantName.
+    ?restaurant food:hasPhone ?phone.
+    ?restaurant food:hasDataSource ?deliveryService.
+    
+    ?restaurant gr:offers ?menu.
+    ?menu a fo:Menu ;
+          food:hasPrice ?price ;
+          gr:legalName ?menuName ;
+          FILTER (REGEX(?menuName, ".*Chicken*.") || REGEX(?menuName, ".*Crispy*."))
+          
+   	?menu gr:description ?description ;
+          FILTER (CONTAINS(?description, "drink")  || CONTAINS(?description, "Drink") )
+            
+}
+
+
+
+
+query 3:
+--------
+## It returns the delivery service name with five highest rated indian or chinese restaurants in London that have rating value more than 2.
+
+PREFIX food: <http://metafood.org#>
+PREFIX ic: <http://ontology.eil.utoronto.ca/icontact.owl#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+
+select ?deliveryService ?restaurantName ?phone ?RatingValue ?cuisine where { 
+
+    ?restaurant gr:legalName ?restaurantName.
+    ?restaurant food:hasPhone ?phone.
+    ?restaurant food:hasDataSource ?deliveryService.
+    
+    ?restaurant ic:hasAddress ?address .
+    ?address ic:hasCity ?city;
+    	FILTER (REGEX(?city, "London")) 
+    
+    ?restaurant food:hasCuisine ?cuisine ;
+       FILTER(CONTAINS(?cuisine, "Indian") || CONTAINS(?cuisine, "Chinese"))
+    
+    ?restaurant food:hasRating ?rating .
+    ?rating food:hasRatingValue ?RatingValue ;
+    	FILTER (?RatingValue > 2)
+    
+} 	ORDER BY ?RatingValue
+	limit 5
+
+
+
+
+query 4:
+--------
+## It returns delivery service name with restaurants that delivers Pilau Rice menu with total price less than 6 pounds included the delivery price.
+
+PREFIX food: <http://metafood.org#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX fo: <http://purl.org/ontology/fo/>
+
+select ?deliveryService ?restaurantName ?phone ?menuName ?totalPrice where { 
+    
+    ?restaurant gr:offers ?menu.
+    ?menu a fo:Menu ;
+          gr:legalName ?menuName ;
+          	FILTER (CONTAINS(?menuName, "Pilau Rice"))
+    
+    ?menu food:hasTotalDeliveryPrice ?totalPrice ;
+          Filter (?totalPrice < 6)
+    
+    ?restaurant gr:legalName ?restaurantName.
+    ?restaurant food:hasPhone ?phone.
+    ?restaurant food:hasDataSource ?deliveryService.
+
+
+}
+
+
+
+
+query 5:
+--------
+## It returns the delivery service name that accepts credit card as payment method, delivers to postal code "SW9 9" from first five highest rated restaurants with rating value more than 2.
+    
+PREFIX food: <http://metafood.org#>
+PREFIX ic: <http://ontology.eil.utoronto.ca/icontact.owl#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+
+
+select ?deliveryService ?restaurantName ?phone ?RatingValue ?cuisine where { 
+    ?restaurant gr:legalName ?restaurantName.
+    ?restaurant food:hasPhone ?phone.
+    ?restaurant food:hasDataSource ?deliveryService.
+    
+    ?restaurant food:hasDeliverySpecification ?delivery.
+    ?delivery ic:hasPostalCode ?postalCode;
+    	FILTER (REGEX(?postalCode, ".*SW9 9*."))
+    
+    ?restaurant food:acceptedPaymentCreditMethod ?creditMethod .
+    ?creditMethod food:creditIsEnabled ?creditIsEnabled;
+        FILTER (CONTAINS(?creditIsEnabled, "YES"))
+    
+    ?restaurant food:hasCuisine ?cuisine .
+    ?restaurant food:hasRating ?rating .
+    ?rating food:hasRatingValue ?RatingValue ;
+    FILTER (?RatingValue > 2) 
+    
+} ORDER BY DESC (?RatingValue)
+ limit 5
+
+ 
+ 
+ query 6:
+ --------
+## It returns the delivery service name that delivers pizza "Margherita" to "SW9 9" postal code with the total delivery time from first three highest rated pizza ria.
+
+PREFIX food: <http://metafood.org#>
+PREFIX ic: <http://ontology.eil.utoronto.ca/icontact.owl#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX fo: <http://purl.org/ontology/fo/>
+
+select ?deliveryService ?restaurantName ?phone ?RatingValue ?menuName ?totalDeliveryTime where { 
+    
+    ?restaurant gr:legalName ?restaurantName.
+    ?restaurant food:hasPhone ?phone.
+    ?restaurant food:hasDataSource ?deliveryService.
+    
+    ?restaurant food:hasTotalDeliveryTime ?totalDeliveryTime .
+    
+    ?restaurant food:hasRating ?rating .
+    ?rating food:hasRatingValue ?RatingValue .
+    
+    ?restaurant gr:offers ?menu.
+    ?menu a fo:Menu ;
+          gr:legalName ?menuName ;
+          FILTER (CONTAINS(?menuName, "Margherita"))
+        
+} ORDER BY DESC (?RatingValue) limit 3
+ 
+query 7:
+--------
+## It returns the delivery service name that delivers Halal food to "SW9 9" postal code offered by highest rated restaurants.
+
+PREFIX food: <http://metafood.org#>
+PREFIX ic: <http://ontology.eil.utoronto.ca/icontact.owl#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX fo: <http://purl.org/ontology/fo/>
+
+select ?deliveryService ?restaurantName ?phone ?RatingValue ?cuisine ?menuName where { 
+    ?restaurant food:hasPhone ?phone.
+    ?restaurant gr:legalName ?restaurantName.
+	?restaurant food:hasDataSource ?deliveryService.
+    
+    ?restaurant food:hasDeliverySpecification ?delivery.
+    ?delivery ic:hasPostalCode ?postalCode;
+    	FILTER (REGEX(?postalCode, ".*SW9 9*."))
+    
+    ?restaurant food:hasCuisine ?cuisine ;
+       FILTER (CONTAINS(?cuisine, "Halal"))
+    
+    ?restaurant gr:offers ?menu.
+    ?menu a fo:Menu ;
+          gr:legalName ?menuName .
+    
+    ?restaurant food:hasRating ?rating .
+    ?rating food:hasRatingValue ?RatingValue .
+    
+    
+} ORDER BY DESC (?RatingValue) limit 5
+
+
+query 8:
+--------
+## It returns the delivery service name that delivers burger and alcohol drinks from first ten cheap eats restaurants in London.
+
+PREFIX food: <http://metafood.org#>
+PREFIX ic: <http://ontology.eil.utoronto.ca/icontact.owl#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX fo: <http://purl.org/ontology/fo/>
+
+select ?deliveryService ?restaurantName ?phone ?RatingValue ?cuisine ?menuName ?price where { 
+    ?restaurant food:hasPhone ?phone.
+    ?restaurant gr:legalName ?restaurantName.
+    ?restaurant food:hasDataSource ?deliveryService.
+    
+    ?restaurant ic:hasAddress ?address .
+    ?address ic:hasCity ?city;
+    FILTER (REGEX(?city, "London")) 
+    
+	?restaurant food:hasCuisine ?cuisine ;
+       FILTER (CONTAINS(?cuisine, "Burger")  || CONTAINS(?cuisine, "Alcohol"))
+    
+    ?restaurant gr:offers ?menu.
+    ?menu a fo:Menu ;
+          gr:legalName ?menuName ;
+          food:hasPrice ?price .
+    
+    ?restaurant food:hasRating ?rating .  
+    ?rating food:hasRatingValue ?RatingValue .
+    
+} ORDER BY ?price limit 10
+
+
+
+query 9:
+--------
+## It returns the delivery service name that deliver spicy food and accept cash as payment method from first five highest rated restaurants in Brixton area.
+
+PREFIX food: <http://metafood.org#>
+PREFIX ic: <http://ontology.eil.utoronto.ca/icontact.owl#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX fo: <http://purl.org/ontology/fo/>
+
+select ?deliveryService ?restaurantName ?phone ?RatingValue ?menuName ?price where {
+    
+    ?restaurant food:hasPhone ?phone.
+    ?restaurant gr:legalName ?restaurantName.
+	?restaurant food:hasDataSource ?deliveryService.
+    
+    ?restaurant ic:hasAddress ?address .
+    ?address ic:hasCity ?city;
+    	FILTER (REGEX(?city, "Brixton")) 
+    
+    ?restaurant food:acceptedPaymentCashMethod ?cashMethod .
+    ?cashMethod food:cashIsEnabled ?cashIsEnabled;
+        FILTER (REGEX(?cashIsEnabled, ".*ENABLED*."))
+    
+    ?restaurant gr:offers ?menu.
+    ?menu a fo:Menu ;
+          food:hasPrice ?price ;
+          gr:legalName ?menuName ;
+          	FILTER (REGEX(?menuName, ".*Spicy*."))
+    
+    ?restaurant food:hasRating ?rating .  
+    ?rating food:hasRatingValue ?RatingValue .
+    
+} ORDER BY ?RatingValue limit 5
+
+
