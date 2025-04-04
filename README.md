@@ -2,7 +2,7 @@
 Semantic web application enabled by a knowledge graph
 
 
-## Version 1: HTML-tag based data collection
+## Version 1: based data collection
 
 
 
