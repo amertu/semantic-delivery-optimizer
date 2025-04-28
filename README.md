@@ -1,4 +1,4 @@
-# #MetaFood: Semantic web application enabled by a knowledge graph
+# #MetaFood: Semantic Delivery Coordination Framework
 ![Python](https://img.shields.io/badge/Python-3.7.6-3776AB?logo=python&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-1.1.1-2a2929?logo=flask&logoColor=white)
 ![GraphDB](https://img.shields.io/badge/GraphDB-8.7-F05032?logo=graphdb&logoColor=white)
@@ -15,11 +15,18 @@
 ![Docker](https://img.shields.io/badge/Docker-3.0-2496ED?logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
 
-This application optimizes food orders and deliveries through semantic linking of relevant data. It uses information from various food delivery services, considering geographic factors, delivery times, restaurant preferences, and ratings. By employing **semantic technologies** and **ontologies**, the system enables intelligent coordination of orders, minimizes delivery times, and enhances the user experience through personalized suggestions.
+## Project Overview
+Developed a semantic framework to optimize order coordination across multiple delivery services, leveraging ontologies and knowledge graphs for intelligent data integration.
 
-## Final Report Overleaf:
+## Key Features
+- **Semantic Integration**: Designed and implemented an ontology-based system to unify data from 4+ delivery service providers.
+- **Technology Stack**: Python, Flask, JavaScript, Docker, Protégé, RDF, SPARQL, RDF4J, and GraphDB.
+- **Knowledge Graphs**: Utilized RDF and SPARQL to create a scalable and flexible knowledge graph for querying and reasoning.
+- **System Architecture**: Deployed services using Docker to ensure modularity and scalability.
 
-https://www.overleaf.com/8736587956jvnmqwsjzpqf
+## Business Impact
+- **Optimized Delivery Coordination**: Improved route planning and order synchronization, resulting in significantly reduced delivery times.
+- **Enhanced Operational Efficiency**: Streamlined inter-system communication, leading to better service reliability and a superior user experience.
 
 
 
