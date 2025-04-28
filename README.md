@@ -18,9 +18,36 @@
 ## Project Overview
 Developed a semantic framework to optimize order coordination across multiple delivery services, leveraging ontologies and knowledge graphs for intelligent data integration.
 
+# Architecture
+```
+                                  ┌───────────────────────────┐
+                                  │       Web Browser         │
+                                  │                           │
+                                  └───────────┬───────────────┘
+                                            │ ↑
+                                            │ │ HTTP Request
+                                            │ │ Result: application/json
+                                            ▼ │
+                                  ┌───────────────────────────┐
+                                  │       Web Server          │
+                                  │     [Docker Container]    │
+                                  │                           │
+                                  │      Python + Flask       │
+                                  └───────────┬───────────────┘
+                                            │ ↑
+                                            │ │ SPARQL - HTTP Request
+                                            │ │ Result: application/json
+                                            ▼ │
+                                  ┌───────────────────────────┐
+                                  │     Graph Database        │
+                                  │     [Docker Container]    │
+                                  │                           │
+                                  │          Neo4j            │
+                                  └───────────────────────────┘
+```
+
 ## Key Features
 - **Semantic Integration**: Designed and implemented an ontology-based system to unify data from 4+ delivery service providers.
-- **Technology Stack**: Python, Flask, JavaScript, Docker, Protégé, RDF, SPARQL, RDF4J, and GraphDB.
 - **Knowledge Graphs**: Utilized RDF and SPARQL to create a scalable and flexible knowledge graph for querying and reasoning.
 - **System Architecture**: Deployed services using Docker to ensure modularity and scalability.
 
