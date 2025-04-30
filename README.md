@@ -9,11 +9,11 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 ![HTML](https://img.shields.io/badge/HTML-E34F26?logo=html5&logoColor=white)
 ![Jupyter Notebook](https://img.shields.io/badge/Jupyter%20Notebook-%E2%9C%94-F37626?logo=jupyter&logoColor=white)
-![Protégé](https://img.shields.io/badge/Prot%C3%A9g%C3%A9-%E2%9C%94-8155ba?logo=protege&logoColor=white)
+![Protégé](https://img.shields.io/badge/Prot%C3%A9g%C3%A9c-5.6.5-3776AB?logo=protege&logoColor=white)
 ![WebVOWL](https://img.shields.io/badge/WebVOWL-%E2%9C%94-blue?logo=webvowl&logoColor=white)
 ![OpenRefine](https://img.shields.io/badge/OpenRefine-%E2%9C%94-blue?logo=openrefine&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-3.0-2496ED?logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
+![Git](https://img.shields.io/badge/Git-2.49.0-f05133?logo=git&logoColor=white)
 
 ## Project Overview
 Developed a semantic framework to optimize order coordination across multiple delivery services, leveraging ontologies and knowledge graphs for intelligent data integration.
