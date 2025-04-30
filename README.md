@@ -19,7 +19,7 @@
 Developed a semantic framework to optimize order coordination across multiple delivery services, leveraging ontologies and knowledge graphs for intelligent data integration.
 
 # Architecture
-```
+```markdown
                                   ┌───────────────────────────┐
                                   │       Web Browser         │
                                   │                           │
