@@ -1,4 +1,4 @@
-# #MetaFood: Semantic Delivery Coordination Framework
+# Semantic Delivery Coordination Framework
 ![Python](https://img.shields.io/badge/Python-3.7.6-3776AB?logo=python&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-1.1.1-2a2929?logo=flask&logoColor=white)
 ![GraphDB](https://img.shields.io/badge/GraphDB-8.7-F05032?logo=graphdb&logoColor=white)
