@@ -1,162 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="70c17cc0-1896-4978-80b1-86d77f249cd1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Data/.ipynb_checkpoints/deliveroo-checkpoint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Data/.ipynb_checkpoints/foodhub_with_menu-checkpoint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Data/.ipynb_checkpoints/merged_data-checkpoint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Data/.ipynb_checkpoints/uber_eats_with_menu-checkpoint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Data/deliveroo.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Data/foodhub.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Data/foodhub_with_menu.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Data/merged_data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Data/supper_london_with_menu.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Data/uber_eats.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Data/uber_eats_with_menu.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Deliveroo/deliveroo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Foodhub_restaurant_menu.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Supper_London_Details/.ipynb_checkpoints/bychloe-checkpoint" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Supper_London_Details/.ipynb_checkpoints/bychloe-checkpoint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Supper_London_Details/.ipynb_checkpoints/cakesandbubbles-checkpoint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Supper_London_Details/.ipynb_checkpoints/daylesfordorganicpimlico-checkpoint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Supper_London_Details/.ipynb_checkpoints/fancycrab-checkpoint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Supper_London_Details/.ipynb_checkpoints/farzicafe-checkpoint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Supper_London_Details/.ipynb_checkpoints/homeslicewestend-checkpoint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Supper_London_Details/.ipynb_checkpoints/ishbilia-checkpoint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Supper_London_Details/.ipynb_checkpoints/wine-checkpoint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Supper_London_Details/Kahani.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Supper_London_Details/bychloe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Supper_London_Details/cakesandbubbles.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Supper_London_Details/cinnamonkitchen.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Supper_London_Details/clondon.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Supper_London_Details/crudocevicheria.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Supper_London_Details/daylesfordorganicbromptoncross.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Supper_London_Details/daylesfordorganicpimlico.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Supper_London_Details/delfino.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Supper_London_Details/fancycrab.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Supper_London_Details/farzicafe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Supper_London_Details/homeslicewestend.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Supper_London_Details/ishbilia.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Supper_London_Details/jeangeorgesattheconnaught.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Supper_London_Details/longflintdrinksco.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Supper_London_Details/memoriesofchina.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Supper_London_Details/over.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Supper_London_Details/overstjames.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Supper_London_Details/pittabun.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Supper_London_Details/planetorganictorringtonplace.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Supper_London_Details/prunier.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Supper_London_Details/scalini.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Supper_London_Details/skinnyprosecco.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Supper_London_Details/sumosantwiga.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Supper_London_Details/thelebanesebakery.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Supper_London_Details/wine.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Supper_London_Details/yifangsoho.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Supper_London_getting_data.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Supper_London_response_victoria_street.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/.ipynb_checkpoints/Bagelicious_4e34_details-checkpoint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/.ipynb_checkpoints/Baker_&amp;_Spice_e992_details-checkpoint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/.ipynb_checkpoints/Balans_Soho_Society_18d5_details-checkpoint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/.ipynb_checkpoints/Boki_Sevendials_7fc6_details-checkpoint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/.ipynb_checkpoints/Caffe_Concerto_Cakes_676e_details-checkpoint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/.ipynb_checkpoints/Caffe_Concerto_Cakes_6a67_details-checkpoint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/.ipynb_checkpoints/Chelsea_Creperie_71c5_details-checkpoint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/.ipynb_checkpoints/Daily_Dose_Cold_Pressed_Juice_Bar_32f0_details-checkpoint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/.ipynb_checkpoints/Denbigh_Food_and_Wine_978f_details-checkpoint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/.ipynb_checkpoints/ELAN London - Belgravia_details-checkpoint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/.ipynb_checkpoints/Frankie &amp; Benny's_details-checkpoint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/.ipynb_checkpoints/Giraffe_30c5_details-checkpoint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/.ipynb_checkpoints/Lebaneats_Mayfair_9e20_details-checkpoint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/.ipynb_checkpoints/Mac_N_Cheese_a34b_details-checkpoint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/.ipynb_checkpoints/Mapa_Cafe_bed5_details-checkpoint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/.ipynb_checkpoints/McColls__Westminster_395e_details-checkpoint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/.ipynb_checkpoints/McDonald's®_details-checkpoint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/.ipynb_checkpoints/McDonalds®_fdc3_details-checkpoint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/.ipynb_checkpoints/PAUL_details-checkpoint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/.ipynb_checkpoints/Simit_Sarayi_2a6e_details-checkpoint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/.ipynb_checkpoints/Spiers_df96_details-checkpoint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Bagelicious_4e34_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Baker_&amp;_Spice_e992_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Balans_Soho_Society_18d5_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Boki_Sevendials_7fc6_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Cafe_Nuvo_c3cd_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Caffe_Concerto_Cakes_676e_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Caffe_Concerto_Cakes_6a67_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Cardinals_Of_Mayfair_d08e_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Chelsea_Creperie_71c5_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Coco_Di_Mama_267e_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Coco_Di_Mama_b770_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Comptoir_Libanais_f2ac_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Crosstown_Doughnuts_bd86_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Daily_Dose_Cold_Pressed_Juice_Bar_32f0_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Delizie_d’italia_30e7_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Denbigh_Food_and_Wine_978f_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Dominique_Ansel_Bakery_568d_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Duck_&amp;_Waffle_Local_5956_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Dupe_Coco_Di_Mama_13be_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/ELAN_London__Belgravia_56be_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/ELAN_London__Knightsbridge_681e_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/ELAN_London__South_Kensington_0be9_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Ecco_Pizzas_8c18_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Enough_to_Feed_an_Elephant_87b8_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Frankie_&amp;_Bennys_3cae_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Giraffe_30c5_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Krispy_Kreme_4b73_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Kula_3849_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/La_Brioche_6281_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Lahore_Grill_House_0e8d_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Lebaneats_Mayfair_9e20_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Leon_5172_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Mac_N_Cheese_a34b_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Mapa_Cafe_bed5_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Maroush_a8ce_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/McColls__Westminster_395e_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/McDonalds®_c792_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/McDonalds®_d7c9_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/McDonalds®_fdc3_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Mediterranean_Cafe_dd24_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/PAUL_fa97_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Patisserie_Valerie_b63e_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Pimlico_Shopper_aed8_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Pizza_Hot_afd3_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Portlands_247_692e_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Premier_Food_and_Wine_f26f_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Ravello_Coffee_Co_b036_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Richoux_95de_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Simit_Sarayi_2a6e_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Simit_Sarayi_871e_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Spiers_df96_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Stack_&amp;_Grill_d370_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Starbucks_bd0c_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Subway_16b8_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Subway_177b_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Subway_895c_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Subway_b146_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Subway_bf22_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Subway_cf92_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Tanyas_Deli_3c08_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/The_Pimlico_Shop_601d_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/The_Portman_2989_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Tiger_Cookies_0f93_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/VQ_f046_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Wonder_Chicken_ac12_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_Details/Yumchaa_820f_details.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/Uber_eats_getting_data.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/common_definitions.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/foodHubData.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/format_deliveroo_data.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/merge_data_sources.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task2_Getting_Data/response_victoria_street.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task3_Ontology/BBC_food_onto.owl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task3_Ontology/goodrelation_onto.owl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task3_Ontology/iContact_onto.owl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task3_Ontology/metaFood_onto.owl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task4_KG/RDF_skeleton.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task4_KG/foodHub_KG.ttl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task4_KG/supper_london_KG.ttl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task4_KG/uber_eats_KG.ttl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task5_KG_to_TS/construct_queries_task5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Task6_SPARQL_Queries/queries_task6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WS_2019_project_30.pdf" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,18 +26,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Projects/Einführung in Semantic Systems/semantic-delivery-optimizer/webapp&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/Projects/Einführung in Semantic Systems/semantic-delivery-optimizer/webapp",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Python.app">
     <configuration name="app-checkpoint" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="webapp" />
@@ -259,32 +115,11 @@
       <option name="presentableId" value="Default" />
       <updated>1626850399297</updated>
       <workItem from="1748188848485" duration="60000" />
+      <workItem from="1748188930701" duration="5727000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="156" y="238" key="FileChooserDialogImpl" timestamp="1626857706775">
-      <screen x="0" y="0" width="1500" height="960" />
-    </state>
-    <state x="156" y="238" key="FileChooserDialogImpl/0.0.1500.960@0.0.1500.960" timestamp="1626857706775" />
-    <state width="727" height="256" key="GridCell.Tab.0.bottom" timestamp="1626874429399">
-      <screen x="0" y="0" width="1500" height="960" />
-    </state>
-    <state width="727" height="256" key="GridCell.Tab.0.bottom/0.0.1500.960@0.0.1500.960" timestamp="1626874429399" />
-    <state width="727" height="256" key="GridCell.Tab.0.center" timestamp="1626874429399">
-      <screen x="0" y="0" width="1500" height="960" />
-    </state>
-    <state width="727" height="256" key="GridCell.Tab.0.center/0.0.1500.960@0.0.1500.960" timestamp="1626874429399" />
-    <state width="727" height="256" key="GridCell.Tab.0.left" timestamp="1626874429399">
-      <screen x="0" y="0" width="1500" height="960" />
-    </state>
-    <state width="727" height="256" key="GridCell.Tab.0.left/0.0.1500.960@0.0.1500.960" timestamp="1626874429399" />
-    <state width="727" height="256" key="GridCell.Tab.0.right" timestamp="1626874429399">
-      <screen x="0" y="0" width="1500" height="960" />
-    </state>
-    <state width="727" height="256" key="GridCell.Tab.0.right/0.0.1500.960@0.0.1500.960" timestamp="1626874429399" />
   </component>
 </project>

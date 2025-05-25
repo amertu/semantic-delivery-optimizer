@@ -1,15 +1,14 @@
-version: '3'
 services:
 
   db:
-    image: eclipse/rdf4j-workbench:amd64-latest
+    image: eclipse/rdf4j-workbench:3.7.7
     ports:
     - "8080:8080"
 
   server:
     build: .
     ports:
-    - "80:5000"
+    - "8083:5000"
     depends_on:
     - db
     links: 
