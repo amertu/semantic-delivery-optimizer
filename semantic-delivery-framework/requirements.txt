@@ -1,6 +1,6 @@
 flask==2.2.5
 requests==2.31.0
 jinja2==3.1.2
-SPARQLWrapper==1.8.5  # Nur wenn du RDF/SPARQL aktiv nutzt
-rdflib==6.3.2         # Nur wenn du RDF lokal verarbeitest (z. B. .ttl parsen)
+SPARQLWrapper==1.8.5
+rdflib==6.3.2
 
