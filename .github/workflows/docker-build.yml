@@ -1,4 +1,4 @@
-name: Docker Compose Build
+name: Docker Build
 
 on:
   push:
@@ -8,6 +8,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./docker
 
     steps:
       - name: Checkout repo
