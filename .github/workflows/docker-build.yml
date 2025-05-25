@@ -8,9 +8,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./docker
 
     steps:
       - name: Checkout repo
@@ -21,3 +18,4 @@ jobs:
 
       - name: Build Docker images with Compose
         run: docker compose build
+        working-directory: ./docker
