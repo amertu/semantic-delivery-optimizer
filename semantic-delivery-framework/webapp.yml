@@ -1,4 +1,4 @@
-name: webapp
+name: semantic-delivery-framework
 channels:
   - defaults
 dependencies:

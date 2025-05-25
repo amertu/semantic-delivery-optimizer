@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: webapp
+        working-directory: semantic-delivery-framework
 
     steps:
       - name: Checkout repo
