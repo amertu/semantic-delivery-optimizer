@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="70c17cc0-1896-4978-80b1-86d77f249cd1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.github/workflows/docker-build.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../.github/workflows/docker-build.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +112,7 @@
       <option name="presentableId" value="Default" />
       <updated>1626850399297</updated>
       <workItem from="1748188848485" duration="60000" />
-      <workItem from="1748188930701" duration="8013000" />
+      <workItem from="1748188930701" duration="8360000" />
     </task>
     <servers />
   </component>
