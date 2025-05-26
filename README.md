@@ -13,6 +13,12 @@
 ## Project Overview
 Developed a semantic framework to optimize order coordination across multiple delivery services, leveraging ontologies and knowledge graphs for intelligent data integration.
 
+
+## Key Features
+- **Semantic Integration**: Designed and implemented an ontology-based system to unify data from 4+ delivery service providers.
+- **Knowledge Graphs**: Utilized RDF and SPARQL to create a scalable and flexible knowledge graph for querying and reasoning.
+- **System Architecture**: Deployed services using Docker to ensure modularity and scalability.
+  
 # Architecture
 ```markdown
                                   ┌───────────────────────────┐
@@ -42,11 +48,6 @@ Developed a semantic framework to optimize order coordination across multiple de
                      └─────────────────────────────────────────────────────┘
 
 ```
-
-## Key Features
-- **Semantic Integration**: Designed and implemented an ontology-based system to unify data from 4+ delivery service providers.
-- **Knowledge Graphs**: Utilized RDF and SPARQL to create a scalable and flexible knowledge graph for querying and reasoning.
-- **System Architecture**: Deployed services using Docker to ensure modularity and scalability.
 
 ## Business Impact
 - **Optimized Delivery Coordination**: Improved route planning and order synchronization, resulting in significantly reduced delivery times.
