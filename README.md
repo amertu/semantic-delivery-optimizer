@@ -19,7 +19,7 @@ Developed a semantic framework to optimize order coordination across multiple de
 - **Knowledge Graphs**: Utilized RDF and SPARQL to create a scalable and flexible knowledge graph for querying and reasoning.
 - **System Architecture**: Deployed services using Docker to ensure modularity and scalability.
   
-# Architecture
+## Architecture
 ```markdown
                                   ┌───────────────────────────┐
                                   │       Web Browser         │
