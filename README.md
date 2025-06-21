@@ -49,6 +49,9 @@ Developed a semantic framework to optimize order coordination across multiple de
 
 ```
 
+## Project Report
+
+[The full report is available via Overleaf](https://www.overleaf.com/read/dpwcdbnybphd#585da5)
 
 
 
