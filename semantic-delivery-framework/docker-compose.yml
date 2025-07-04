@@ -1,16 +1,23 @@
+version: '3.8'
+
 services:
 
   db:
     image: eclipse/rdf4j-workbench:3.7.7
     ports:
-    - "8080:8080"
+      - "8080:8080"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/rdf4j-server/repositories"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
 
   server:
     build: .
     ports:
-    - "8083:5000"
+      - "8083:5000"
     depends_on:
-    - db
-    links: 
-    - "db:database"
-
+      db:
+        condition: service_healthy
+    links:
+      - "db:database"

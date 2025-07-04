@@ -1,3 +1,5 @@
+from csv import excel
+
 from flask import Flask
 from endpoints.ui.index_page import index_page
 from endpoints.api.search_api import search_api
@@ -23,24 +25,25 @@ repos = """
    ].
 """
 
-app = Flask(__name__)
-
-@app.before_first_request
 def activate_job():
-    r = requests.get(url="http://database:8080/rdf4j-server/repositories", headers={'Accept':'application/json'})
-    app.logger.info(r)
-    r = requests.put('http://database:8080/rdf4j-server/repositories/semsys', data=repos,  headers={'Accept':'application/json', 'Content-Type':'text/rdf+n3'})
-    headers = headers = {'Content-Type': 'text/turtle'}
-    app.logger.info(r)
-    r = requests.post('http://database:8080/rdf4j-server/repositories/semsys/statements', data=open('./foodHub_KG.ttl', 'rb'), headers=headers)
-    app.logger.info(r) 
+    try:
+        r = requests.get(url="http://database:8080/rdf4j-server/repositories", headers={'Accept':'application/json'})
+        app.logger.info(r)
+        r = requests.put('http://database:8080/rdf4j-server/repositories/semsys', data=repos,  headers={'Accept':'application/json', 'Content-Type':'text/rdf+n3'})
+        headers = {'Content-Type': 'text/turtle'}
+        app.logger.info(r)
+        r = requests.post('http://database:8080/rdf4j-server/repositories/semsys/statements', data=open('./foodHub_KG.ttl', 'rb'), headers=headers)
+        app.logger.info(r)
+    except Exception as e:
+        app.logger.info(f"Error during activate_job: {e}")
 
-
+app = Flask(__name__)
 app.register_blueprint(index_page, url_prefix='/')
 app.register_blueprint(search_api, url_prefix='/api')
 
 
-
+# Run initialization explicitly before starting server
+activate_job()
 
 if __name__ == '__main__':
     app.run()
