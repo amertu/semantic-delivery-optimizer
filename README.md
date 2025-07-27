@@ -1,4 +1,4 @@
-# Semantic Delivery Coordination Framework
+# Semantic Delivery Coordination System
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/amertu/semantic-delivery-optimizer/docker-build.yml?logo=github)
 
 ![Python](https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white)
